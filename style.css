@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans JP";
+}
+
+.dark-btn {
+  padding: 12px 94px;
+  border: 1px solid var(--Gold, #dca840);
+  background: #333;
+  box-shadow: 0px 0px 9px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 180%; /* 28.8px */
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-content ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+.header-content ul a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+}
+
+.header-content .header-contact-btn {
+  padding: 8px 32px;
+  background: #e9e9e9;
+  color: #010101;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+}
+
+/* header ends */
+
+/* main fv */
+
+.main-fv-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 840px;
+}
+
+.main-fv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./img/fv.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-fv_top-text {
+  position: absolute;
+  top: 200px;
+  left: 99px;
+}
+
+.main-fv_top-text h1 {
+  color: rgba(182, 182, 182, 0.13);
+  font-family: "Plus Jakarta Sans";
+  font-size: 87px;
+  font-weight: 500;
+  line-height: 120%; /* 104.4px */
+}
+
+.main-fv_top-text h1:last-of-type {
+  padding-left: 145px;
+}
+
+.main-fv_bottom-text {
+  position: absolute;
+  left: 91px;
+  top: 470px;
+}
+
+.main-fv_bottom-text h2 {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 180%; /* 82.8px */
+}
+
+.main-fv_bottom-text p {
+  color: #676767;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+}
+
+/* main fv ends */
+
+/* news section */
+
+.news {
+  margin: 85px 0 91px;
+  text-align: center;
+}
+
+.news-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 200px 50px;
+  gap: 59px;
+}
+
+.news-title h2 {
+  color: #000101;
+  font-family: "Noto Sans JP";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%; /* 64px */
+  letter-spacing: 1.6px;
+}
+
+.news-title p {
+  color: var(--text_sub, #757575);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  letter-spacing: 2.4px;
+}
+
+.news-content {
+  width: 70%;
+}
+
+.news-content_item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.news-content_item span {
+  color: var(--text_sub, #757575);
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+  letter-spacing: 0.8px;
+}
+
+.news-content_item p {
+  color: #333;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+  letter-spacing: 0.8px;
+}
+
+/* news section ends */
