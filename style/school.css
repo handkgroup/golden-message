@@ -1,0 +1,16 @@
+.mission-section {
+  margin-bottom: 124px;
+  .container {
+    h2 {
+      max-width: 1000px;
+      margin: 0 auto 56px;
+    }
+    p {
+      color: #000;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 180%; /* 28.8px */
+    }
+  }
+}

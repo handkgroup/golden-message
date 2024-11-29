@@ -1,0 +1,86 @@
+.service-menu-section {
+  margin-bottom: 80px;
+  .container {
+    max-width: 1210px;
+    h2 {
+      color: #000101;
+      text-align: center;
+      font-family: "Noto Sans JP";
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 200%; /* 64px */
+      letter-spacing: 1.6px;
+      text-align: center;
+    }
+
+    div {
+      b {
+        color: var(--Gold, #dca840);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 180%; /* 28.8px */
+        margin-bottom: 24px;
+      }
+      .row {
+        margin-bottom: 40px;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        gap: 24px;
+      }
+      .card {
+        border: 1px solid var(--Gray, #c5c5c5);
+        background: #fff;
+        max-width: 341px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 68px;
+        padding: 20px;
+
+        p {
+          color: #000;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 160%; /* 25.6px */
+          letter-spacing: 1.6px;
+        }
+      }
+    }
+  }
+}
+
+.commitment-section {
+  margin-bottom: 80px;
+
+  .container {
+    text-align: center;
+
+    .section-title {
+      color: #000;
+      text-align: center;
+      font-family: "Noto Sans JP";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 180%; /* 28.8px */
+    }
+
+    .underlined {
+      margin-bottom: 40px;
+    }
+    p {
+      color: #000;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 180%; /* 28.8px */
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+}
