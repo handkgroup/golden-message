@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/midform.css">
+    <title>Midform</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="../assets/img/logo-dark.png" alt="GoldenMessage">
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menu">⇶</label>
+                <ul class="nav__list">
+                    <label for="menu" class="menu times">X</label>
+                    <li><a class="list__link" href="/service">サービス</a></li>
+                    <li><a class="list__link" href="/about">会社概要</a></li>
+                    <li><a class="list__link" href="/mission">ミッション・バリュー</a></li>
+                    <li><a class="list__link" href="/news">お知らせ</a></li>
+                    <li><a class="list__link" href="/recruit">採用情報</a></li>
+                    <li><a class="list__link contact-btn" href="/contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="top__text">TOP　>　お問い合わせ</p>
+        <div class="contact-header">
+            <p class="bg-text">RECRUIT
+                <br> ENTRY
+            </p>
+            <div>
+                <h1 class="contact-title">MID-CAREER</h1>
+                <p class="contact-subtitle">中途採用エントリー</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="full__name">氏名<span class="required">必須</span></label>
+                    <input type="text" id="full__name" required>
+                </div>
+                <div class="form-group">
+                    <label for="name__firugana">氏名（フリガナ）<span class="required">必須</span></label>
+                    <input type="text" id="name__firugana" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス<span class="required">必須</span></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="email__confirm">メールアドレス（確認）<span class="required">必須</span></label>
+                    <input type="email" id="email__confirm" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone__number">電話番号<span class="required">必須</span></label>
+                    <input type="tel" id="phone__number" required>
+                </div>
+                <div class="form-group gender">
+                    <label for="">性別</label>
+                    <div class="from__group-checkbox">
+                        <div>
+                            <input type="checkbox" id="check1">
+                            <label for="check1">男性</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check2">
+                            <label for="check2">女性</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birth">生年月日<span class="required">必須</span></label>
+                    <input type="number" id="birth" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="work__history">職歴について<span class="required">必須</span></label>
+                    <textarea id="work__history" required placeholder="最終学歴以降の職歴について、時期と会社名をご記載ください。"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+                    <textarea id="message" required placeholder="何かご希望やご相談事項がございましたらご記載ください"></textarea>
+                </div>
+                <div class="form__file-accept">
+                    <div class="file__accept-left">
+                        <p class="file-note">ファイル添付 <br> ※資料がある場合は、こちら <br> より添付をお願いします。（パ <br> ワーポイント・エクセル・ <br>
+                            PDF・ZIP形式かつ2MBまで）
+                        </p>
+                    </div>
+
+                    <p class="any">任意</p>
+
+                    <label for="file" class="custom-file-upload">
+                        ファイルを選択
+                        <input type="file" id="file">
+                    </label>
+
+
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms"><a href="#" class="terms-link">使用規約</a>に同意する</label>
+                </div>
+                <div class="form-group accept-btn">
+                    <button type="submit">送信する</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="" class="footer-logo">
+                <img src="../assets/img/footer_logo.png" alt="Golden Message">
+            </a>
+            <nav class="footer-nav">
+                <div class="footer-nav-column">
+                    <h3>サービス</h3>
+                    <ul>
+                        <li><a href="#">サービス1</a></li>
+                        <li><a href="#">サービス2</a></li>
+                        <li><a href="#">サービス3</a></li>
+                        <li><a href="#">サービス4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>会社概要</h3>
+                    <ul>
+                        <li><a href="#">ミッション・バリュー</a></li>
+                        <li><a href="#">お知らせ</a></li>
+                        <li><a href="#">採用情報</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>その他</h3>
+                    <ul>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <a href="#">プライバシーポリシー</a>
+            <span>© copyright 2024 Golden Messeage</span>
+        </div>
+    </footer>
+</body>
+
+</html>
