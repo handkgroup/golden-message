@@ -1,0 +1,53 @@
+@import "components/responsive-container.css";
+@import "components/navbar.css";
+@import "components/hero-title.css";
+@import "components/buttons.css";
+@import "utility/utilities.css";
+@import "components/cta.css";
+@import "pages/news.css";
+@import "pages/about.css";
+@import "components/footer.css";
+@import "components/title.css";
+@import "utility/responsive.css";
+@import "pages/business.css";
+
+/* styles.css */
+:root {
+  --primary: #c5a05a;
+  --text-color: rgba(0, 0, 0, 0.56);
+  --bg-color: #fff;
+  --bg-gray: #f5f5f5;
+  --bg-dark: #1a1a1a;
+  --link-hover: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+

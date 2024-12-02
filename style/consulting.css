@@ -1,34 +1,40 @@
 @import url("./reset.css");
-@import url("./style.css");
+
+
+
+
 
 .service-section {
-  padding: 50px;
   margin-bottom: 80px;
+
   .container {
-    padding: 50px;
     text-align: center;
 
     p {
       text-align: center;
       font-size: 16px;
       font-weight: 400;
-      line-height: 180%; /* 28.8px */
+      line-height: 180%;
+      /* 28.8px */
     }
   }
 }
 
 .propose-section {
   margin-bottom: 240px;
+
   .container {
     h2 {
       color: #000101;
       font-size: 32px;
       font-weight: 700;
-      line-height: 200%; /* 64px */
+      line-height: 200%;
+      /* 64px */
       letter-spacing: 1.6px;
       margin-bottom: 74px;
       text-align: center;
     }
+
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -37,7 +43,7 @@
 
       .card {
         max-width: 313px;
-        background-image: url("/assets/images/propose-card.jpg");
+        background-image: url("../assets/img/propose-card.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -51,7 +57,7 @@
           transform: translateY(-20px);
         }
 
-        &:hover > .content {
+        &:hover>.content {
           max-height: 400px;
         }
 
@@ -66,7 +72,8 @@
             text-align: justify;
             font-size: 24px;
             font-weight: 700;
-            line-height: 180%; /* 43.2px */
+            line-height: 180%;
+            /* 43.2px */
             letter-spacing: 1.2px;
             margin-bottom: 16px;
           }
@@ -76,7 +83,8 @@
             text-align: justify;
             font-size: 16px;
             font-weight: 400;
-            line-height: 180%; /* 28.8px */
+            line-height: 180%;
+            /* 28.8px */
             letter-spacing: 0.8px;
           }
         }
@@ -89,18 +97,21 @@
   max-width: 100vw;
   position: relative;
   overflow: hidden;
+
   h2 {
     color: #000101;
     font-size: 32px;
     font-weight: 700;
-    line-height: 200%; /* 64px */
+    line-height: 200%;
+    /* 64px */
     letter-spacing: 1.6px;
     text-align: center;
     margin-bottom: 40px;
   }
+
   .steps {
     .step {
-      background-image: url("/assets/images/dk-bg.png");
+      background-image: url("../assets/img/dk-bg.png");
       background-repeat: no-repeat;
       position: relative;
       z-index: 10;
@@ -118,45 +129,57 @@
           margin: 0 auto 0 0;
         }
       }
+
       * {
         position: relative;
         z-index: 100;
       }
+
       b {
         color: #dca840;
         font-family: "Montserrat", sans-serif;
         font-size: 16px;
         font-weight: 700;
-        line-height: 180%; /* 28.8px */
+        line-height: 180%;
+        /* 28.8px */
       }
+
       .underlined {
         color: inherit;
         text-align: start;
         margin-bottom: 40px;
       }
+
       .underlined::after {
         margin: 0 !important;
       }
+
       p {
         font-size: 16px;
         font-weight: 400;
-        line-height: 180%; /* 28.8px */
+        line-height: 180%;
+        /* 28.8px */
       }
     }
+
     .step:first-child,
     .step:last-child {
-      background-image: url("/assets/images/wh-bg.png");
+      background-image: url("../assets/img/wh-bg.png");
     }
+
     .step:first-child {
       z-index: 1;
       transform: translateY(0px);
     }
+
     .step:nth-child(3) {
       z-index: 100;
       transform: translateY(-400px);
     }
+
     .step:nth-child(2) {
       .container {
+
         /* display: flex;
         justify-content: end; */
         /* width: 100%; */
@@ -180,6 +203,7 @@
 .link-button {
   margin-bottom: 100px;
   text-align: center;
+
   button {
     border: 1px solid var(--Gold, #dca840);
     background: #333;
@@ -187,7 +211,8 @@
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    line-height: 180%; /* 28.8px */
+    line-height: 180%;
+    /* 28.8px */
     font-family: inherit;
     max-width: 548px;
     width: 100%;
@@ -197,49 +222,62 @@
 
 .feature-section {
   margin-bottom: 140px;
+
   .container {
     h2 {
       text-align: center;
       color: #000101;
       font-size: 32px;
       font-weight: 700;
-      line-height: 200%; /* 64px */
+      line-height: 200%;
+      /* 64px */
       letter-spacing: 1.6px;
       margin-bottom: 60px;
     }
 
     .cards {
+      display: flex;
+      flex-direction: column;
+
       .card {
         display: flex;
         align-items: center;
         gap: 57px;
-        margin-bottom: 48px;
+
+        /* margin-bottom: 48px; */
         b {
           font-family: "Montserrat", sans-serif;
           font-size: 16px;
           font-weight: 400;
-          line-height: 180%; /* 28.8px */
+          line-height: 180%;
+          /* 28.8px */
         }
+
         .underlined {
           color: inherit;
           text-align: start;
           margin-bottom: 40px;
           font-size: 32px;
         }
+
         .underlined::after {
           margin: 0 !important;
         }
+
         p {
           color: #000;
           font-size: 16px;
           font-weight: 400;
-          line-height: 180%; /* 28.8px */
+          line-height: 180%;
+          /* 28.8px */
         }
+
         .link-button {
           margin-top: 40px;
           max-width: 300px;
         }
       }
+
       .card:nth-child(2) {
         flex-direction: row-reverse;
       }
@@ -255,7 +293,8 @@
       color: #000101;
       font-size: 32px;
       font-weight: 700;
-      line-height: 200%; /* 64px */
+      line-height: 200%;
+      /* 64px */
       letter-spacing: 1.6px;
       text-align: center;
       margin-bottom: 80px;
@@ -299,7 +338,8 @@
       color: #000;
       font-size: 18px;
       font-weight: 700;
-      line-height: 180%; /* 32.4px */
+      line-height: 180%;
+      /* 32.4px */
       letter-spacing: 0.9px;
       margin-bottom: 24px;
     }
@@ -308,7 +348,8 @@
       color: #000;
       font-size: 16px;
       font-weight: 400;
-      line-height: 180%; /* 28.8px */
+      line-height: 180%;
+      /* 28.8px */
       letter-spacing: 0.8px;
     }
   }
@@ -355,7 +396,8 @@
         -webkit-text-stroke-color: var(--Gold, #dca840);
         font-size: 32px;
         font-weight: 700;
-        line-height: 100%; /* 32px */
+        line-height: 100%;
+        /* 32px */
         font-family: inherit;
       }
 
@@ -365,12 +407,14 @@
         font-weight: 700;
         margin-bottom: 17px;
       }
+
       p {
         color: #000;
         text-align: center;
         font-size: 16px;
         font-weight: 400;
-        line-height: 180%; /* 28.8px */
+        line-height: 180%;
+        /* 28.8px */
         max-width: 608px;
         margin: 0 auto 64px;
       }
@@ -384,4 +428,16 @@
 
 .hide {
   display: none;
+}
+
+
+.card__carousel {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: scroll !important;
+
+  .card {
+    transform: translateY(0) !important;
+    margin: 0 !important;
+  }
 }

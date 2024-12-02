@@ -132,7 +132,58 @@ body {
     align-items: center;
     justify-content: center;
     gap: 25px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
+
+.grid__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    object-position: center;
+    z-index: -11;
+    transform: scale(1);
+    transition: 5s;
+}
+
+.item:hover .grid__bg {
+    transform: scale(2);
+    transition: 20s;
+    /* display: none; */
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.item:hover::after {
+    width: 95%;
+    height: 85%;
+    border-radius: 40px;
+    opacity: 0.9;
+}
+
+.move__icon {
+    position: absolute;
+    right: 20px;
+    font-size: 35px;
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+.item:hover .move__icon {
+    right: 40px;
+}
+
+
 
 .item__info {
     display: flex;
@@ -140,19 +191,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 25px;
-    background: rgba(255, 255, 255, 0.70);
-    border-radius: 40px;
-    height: 90%;
-    width: 95%;
 }
-
-.box4 {
-    background-image: url('../assets/img/consulting.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 .contact__info {
     background-image: url('../assets/img/contact_bg.png');

@@ -1,0 +1,16 @@
+.title {
+  font-size: 1.8rem;
+}
+
+.title-underline-orange {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-color: #dca840;
+}
+
+
+.golden-title{
+    color: #DCA840;
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+}
