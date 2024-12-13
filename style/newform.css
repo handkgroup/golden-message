@@ -82,13 +82,15 @@ body {
 }
 
 .contact-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-size: 108px;
+    font-weight: 700;
+    line-height: 120%;
 }
 
 .contact-subtitle {
-    font-size: 1.2rem;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
 }
 
 .container {
@@ -138,25 +140,31 @@ input[type="file"] {
     background-color: #8888881b;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
 
 label {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
-    font-weight: 500;
+    /* margin-bottom: 5px; */
+    letter-spacing: 0.8px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="number"],
+input[type="date"],
 textarea {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid #B3B3B3;
+    background: #FFF;
     box-sizing: border-box;
 }
 
@@ -360,6 +368,14 @@ button:hover {
     .contact-header {
         margin: 2rem 0;
     }
+
+    .contact-title {
+        font-size: 95px;
+    }
+
+    .contact-subtitle {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -382,6 +398,14 @@ button:hover {
 
     .top__text {
         font-size: 15px;
+    }
+
+    .contact-title {
+        font-size: 85px;
+    }
+
+    .contact-subtitle {
+        font-size: 22px;
     }
 }
 
@@ -422,6 +446,14 @@ button:hover {
         left: 20px;
         top: 20px;
     }
+
+    .contact-title {
+        font-size: 75px;
+    }
+
+    .contact-subtitle {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -440,12 +472,24 @@ button:hover {
     .top__text {
         font-size: 14px;
     }
+
+    .contact-title {
+        font-size: 70px;
+    }
+
+    .contact-subtitle {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 660px) {
     .form-group {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 15px;
+    }
+
+    form {
+        gap: 15px;
     }
 
     .gender {
@@ -456,6 +500,7 @@ button:hover {
 
     label {
         justify-content: start;
+        /* margin-bottom: 5px; */
     }
 
     .top__text {
@@ -464,6 +509,14 @@ button:hover {
 
     .main {
         padding: 0 15px;
+    }
+
+    .contact-title {
+        font-size: 65px;
+    }
+
+    .contact-subtitle {
+        font-size: 18px;
     }
 }
 
@@ -486,6 +539,14 @@ button:hover {
     .accept-btn button {
         padding: 12px 50px;
     }
+
+    .contact-title {
+        font-size: 60px;
+    }
+
+    .contact-subtitle {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 465px) {
@@ -493,9 +554,6 @@ button:hover {
         font-size: 80px;
     }
 
-    .contact-title {
-        font-size: 40px;
-    }
 
     .contact-header div {
         padding-left: 35px;
@@ -510,11 +568,23 @@ button:hover {
         font-size: 12px;
         margin-top: 15px;
     }
+
+    .contact-title {
+        font-size: 50px;
+    }
+
+    .contact-subtitle {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 375px) {
     .bg-text {
         font-size: 65px;
+    }
+
+    .contact-title {
+        font-size: 40px;
     }
 }
 

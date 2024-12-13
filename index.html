@@ -9,173 +9,210 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="./assets/img/logo.png" alt="" class="logo-light">
-            <img src="./assets/img/logo-dark.png" alt="" class="logo-dark">
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="../assets/img/logo.png" alt="GoldenMessage">
+            </a>
+            <nav class="nav">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menu">⇶</label>
+                <ul class="nav__list">
+                    <label for="menu" class="menu times">X</label>
+                    <li><a class="list__link" href="/service">サービス</a></li>
+                    <li><a class="list__link" href="/about">会社概要</a></li>
+                    <li><a class="list__link" href="/mission">ミッション・バリュー</a></li>
+                    <li><a class="list__link" href="/news">お知らせ</a></li>
+                    <li><a class="list__link" href="/recruit">採用情報</a></li>
+                    <li><a class="list__link contact-btn" href="/contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="header-content">
-            <ul>
-                <li><a href="#">サービス</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">ミッション・バリュー</a></li>
-                <li><a href="#">お知らせ</a></li>
-                <li><a href="#">採用情報</a></li>
-            </ul>
-            <a href="#" class="header-contact-btn">お問い合わせ</a>
+        <div class="contact-header">
+            <p class="bg__text">
+                Maximizing Career
+                <span>Fulfillment for Everyone</span>
+            </p>
+            <div class="contact__info">
+                <h1 class="contact-title">キャリア充実感を最大化する</h1>
+                <p class="contact-text">
+                    学びと出会いを通じて、キャリアと人生に輝きを届けるビジネスアスリート集団
+                </p>
+            </div>
         </div>
     </header>
-    <main>
-        <div class="main-fv-wrapper">
-            <section class="main-fv">
-                <div class="main-fv_top-text">
-                    <h1>Maximizing Career</h1>
-                    <h1>Fulfillment for Everyone</h1>
-                </div>
-                <div class="main-fv_bottom-text">
+
+    <main class="main">
+        <section class="news">
+            <div class="news__info">
+                <div class="news__left">
                     <h2>
-                        キャリア充実感を最大化する
+                        NEWS
+                        <span>
+                            お知らせ
+                        </span>
                     </h2>
+                </div>
+                <div class="news__right">
                     <p>
-                        学びと出会いを通じて、キャリアと人生に輝きを届けるビジネスアスリート集団
+                        2022/12/11 <span>2023年1～3月版資料を更新しました</span>
+                    </p>
+                    <p>
+                        2022/12/11 <span>2023年1～3月版資料を更新しました</span>
                     </p>
                 </div>
-            </section>
-        </div>
-        <section class="news">
-            <div class="news-wrapper">
-                <div class="news-title">
-                    <p>News</p>
-                    <h2>お知らせ</h2>
-                </div>
-                <div class="news-content">
-                    <div class="news-content_item">
-                        <span>2022/12/11</span>
-                        <p>2023年1～3月版資料を更新しました</p>
-                    </div>
-                    <div class="news-content_item">
-                        <span>2022/12/11</span>
-                        <p>2023年1～3月版資料を更新しました</p>
-                    </div>
-                </div>
             </div>
-            <a href="#" class="dark-btn">お知らせをみる</a>
+            <div class="news__btn">
+                <a href="#!" class="news__link">お知らせをみる</a>
+            </div>
         </section>
-        <section class="about-section">
-            <div class="about-left">
-                <div class="about-title">
-                    <span>“</span>
-                    <div class="about-title-inner">
-                        <img src="./assets/img/about_title.png" alt="">
-                        <h2>にスパイスを</h2>
-                    </div>
-                </div>
-                <p class="about-text">
-                    誰もが自由にキャリアを選択できるこの時代。<br> 1ヵ所で複数社のインターンを体験することができ、新たなコミュニティ形成も可能。<br>
+
+        <section class="spice">
+            <div class="spice__left">
+                <h2 class="spice__title">
+                    “<b>​人生</b>にスパイスを
+                </h2>
+                <p class="spice__text">
+                    誰もが自由にキャリアを選択できるこの時代。<br>
+                    1ヵ所で複数社のインターンを体験することができ、新たなコミュニティ形成も可能。<br>
                     あなたが理想とする未来を実現できるように、限られた時間の中でタイムパフォーマンス良く、圧倒的な成長ができる”バーチャルインターンシップSOBANIRU”。
                 </p>
-                <a href="#">私たちについて</a>
+                <div class="spice__btn">
+                    <a href="#!" class="spice__link">私たちについて</a>
+                </div>
             </div>
-            <div class="about-right">
-                <img src="./assets/img/about.png" alt="">
+            <div class="spice__right">
+                <img src="./assets/img/feature-section.png" alt="">
             </div>
         </section>
-        <section class="service-section">
-            <div class="service-title">
-                <p>service</p>
-                <h2>展開サービス</h2>
-            </div>
-            <div class="service-cards">
-                <a href="#" class="service-card">
-                    <div class="service-card-bg"></div>
-                    <div class="service-card-content">
-                        <p>キャッチコピーが入りますテキストテキスト</p>
-                        <h3>学生コミュニティ事業</h3>
+
+        <section class="service">
+            <div class="service__container">
+
+                <div class="service__info">
+                    <p class="service__text">
+                        SERVICE
+                    </p>
+                    <h2 class="service__title">
+                        展開サービス
+                    </h2>
+                </div>
+                <div class="service__grid">
+                    <div class="item box1">
+                        <p class="grid__text">
+                            キャッチコピーが入りますテキストテキスト
+                        </p>
+                        <h3 class="grid__title">
+                            学生コミュニティ事業
+                        </h3>
                     </div>
-                </a>
-                <a href="#" class="service-card">
-                    <div class="service-card-bg"></div>
-                    <div class="service-card-content">
-                        <p>キャッチコピーが入りますテキストテキスト</p>
-                        <h3>スクール事業</h3>
+                    <div class="item box2">
+                        <p class="grid__text">
+                            キャッチコピーが入りますテキストテキスト
+                        </p>
+                        <h3 class="grid__title">
+                            スクール事業
+                        </h3>
                     </div>
-                </a>
-                <a href="#" class="service-card">
-                    <div class="service-card-bg"></div>
-                    <div class="service-card-content">
-                        <p>キャッチコピーが入りますテキストテキスト</p>
-                        <h3>キャリアコーチング事業</h3>
+                    <div class="item box3">
+                        <p class="grid__text">
+                            キャッチコピーが入りますテキストテキスト
+                        </p>
+                        <h3 class="grid__title">
+                            キャリアコーチング事業
+                        </h3>
                     </div>
-                </a>
-                <a href="#" class="service-card">
-                    <div class="service-card-bg"></div>
-                    <div class="service-card-content">
-                        <p>キャッチコピーが入りますテキストテキスト</p>
-                        <h3>コンサルティング/アウトソーシング事業</h3>
+                    <div class="item box4">
+                        <p class="grid__text">
+                            キャッチコピーが入りますテキストテキスト
+                        </p>
+                        <h3 class="grid__title">
+                            コンサルティング/アウトソーシング事業
+                        </h3>
                     </div>
-                </a>
+                </div>
             </div>
         </section>
-        <section class="special-section">
-            <div class="special-title">
-                <p>Special</p>
-                <h2>スペシャル</h2>
+
+
+        <section class="special">
+            <div class="special__info">
+                <p class="special__text">
+                    SPECIAL
+                </p>
+                <h2 class="special__title">
+                    スペシャル
+                </h2>
             </div>
-            <div class="special-content">
-                <a href="#">
-                    <img src="./assets/img/special.png" alt="">
+            <img src="./assets/img/special.png" alt="">
+        </section>
+
+        <div class="main__option">
+            <div class="option__left option__all">
+                <img src="./assets/img/recruit.png" class="option__img" alt="">
+                <div>
+                    <h2 class="option__title">
+                        Recriut
+                    </h2>
+                    <p class="option__subtitle">
+                        採用情報
+                    </p>
+                </div>
+                <a class="arrow" href="#!">
+                    <img src="../assets/img/arrow.png" alt="">
                 </a>
             </div>
-        </section>
-        <section class="info-section">
-            <a href="#" class="info-inner recriut">
-                <div class="info-left">
-                    <h2>recriut</h2>
-                    <p>採用情報</p>
+            <div class="option__right option__all">
+                <img src="./assets/img/contact.png" class="option__img" alt="">
+                <div>
+                    <h2 class="option__title">
+                        Contact
+                    </h2>
+                    <p class="option__subtitle">
+                        問い合わせ
+                    </p>
                 </div>
-                <div class="info-right">
-                    <img src="./assets/img/arrow.png" alt="">
-                </div>
-            </a>
-            <a href="#" class="info-inner contact">
-                <div class="info-left">
-                    <h2>Contact</h2>
-                    <p>問い合わせ</p>
-                </div>
-                <div class="info-right">
-                    <img src="./assets/img/arrow.png" alt="">
-                </div>
-            </a>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-top">
-            <div class="logo">
-                <img src="./assets/img/footer_logo.png" alt="">
-            </div>
-            <div class="footer-menu">
-                <ul>
-                    <li><a href="#">サービス</a></li>
-                    <li><a href="#">サービス1</a></li>
-                    <li><a href="#">サービス2</a></li>
-                    <li><a href="#">サービス3</a></li>
-                    <li><a href="#">サービス4</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">会社概要</a></li>
-                    <li><a href="#">ミッション・バリュー</a></li>
-                    <li><a href="#">お知らせ</a></li>
-                    <li><a href="#">採用情報</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">お問い合わせ</a></li>
-                    <li><a href="#">個人情報保護方針</a></li>
-                </ul>
+                <a class="arrow" href="#!">
+                    <img src="../assets/img/arrow.png" alt="">
+                </a>
             </div>
         </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="" class="footer-logo">
+                <img src="../assets/img/footer_logo.png" alt="Golden Message">
+            </a>
+            <nav class="footer-nav">
+                <div class="footer-nav-column">
+                    <h3>サービス</h3>
+                    <ul>
+                        <li><a href="#">サービス1</a></li>
+                        <li><a href="#">サービス2</a></li>
+                        <li><a href="#">サービス3</a></li>
+                        <li><a href="#">サービス4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>会社概要</h3>
+                    <ul>
+                        <li><a href="#">ミッション・バリュー</a></li>
+                        <li><a href="#">お知らせ</a></li>
+                        <li><a href="#">採用情報</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>その他</h3>
+                    <ul>
+                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="footer-bottom">
-            <p>プライバシーポリシー</p>
-            <p>© copyright 2024 Golden Messeage</p>
+            <a href="#">プライバシーポリシー</a>
+            <span>© copyright 2024 Golden Message</span>
         </div>
     </footer>
     <script src="./js/script.js"></script>

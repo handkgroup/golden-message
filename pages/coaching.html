@@ -208,7 +208,7 @@
       <h2>ご支援事例</h2>
 
       <div class="cards card__carousel">
-        <div class="card">
+        <div class="card more__modal">
           <div class="picture">
             <img src="../assets/img/case-study.png" alt="photo" />
             <button class="case-study-btn">more</button>
@@ -218,7 +218,7 @@
             3ヵ月という短期間でしたが、とても有意義な時間を過ごせました。漠然とある悩みや迷いを言語化していただき、将来のキ...
           </p>
         </div>
-        <div class="card">
+        <div class="card more__modal">
           <div class="picture">
             <img src="../assets/img/case-study.png" alt="photo" />
             <button class="case-study-btn">more</button>
@@ -228,7 +228,7 @@
             3ヵ月という短期間でしたが、とても有意義な時間を過ごせました。漠然とある悩みや迷いを言語化していただき、将来のキ...
           </p>
         </div>
-        <div class="card">
+        <div class="card more__modal">
           <div class="picture">
             <img src="../assets/img/case-study.png" alt="photo" />
             <button class="case-study-btn">more</button>
@@ -238,7 +238,7 @@
             3ヵ月という短期間でしたが、とても有意義な時間を過ごせました。漠然とある悩みや迷いを言語化していただき、将来のキ...
           </p>
         </div>
-        <div class="card">
+        <div class="card more__modal">
           <div class="picture">
             <img src="../assets/img/case-study.png" alt="photo" />
             <button class="case-study-btn">more</button>
@@ -248,7 +248,7 @@
             3ヵ月という短期間でしたが、とても有意義な時間を過ごせました。漠然とある悩みや迷いを言語化していただき、将来のキ...
           </p>
         </div>
-        <div class="card">
+        <div class="card more__modal">
           <div class="picture">
             <img src="../assets/img/case-study.png" alt="photo" />
             <button class="case-study-btn">more</button>
@@ -258,7 +258,7 @@
             3ヵ月という短期間でしたが、とても有意義な時間を過ごせました。漠然とある悩みや迷いを言語化していただき、将来のキ...
           </p>
         </div>
-        <div class="card">
+        <div class="card more__modal">
           <div class="picture">
             <img src="../assets/img/case-study.png" alt="photo" />
             <button class="case-study-btn">more</button>
@@ -271,15 +271,13 @@
       </div>
 
       <!-- Modal -->
-      <div class="modal hide">
-        <div class="modal-container">
-          <div class="modal-content">
-            <button class="cross-btn">×</button>
-            <h2>企業名</h2>
-            <p>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-            </p>
-          </div>
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <h2>企業名</h2>
+          <p class="modal__text">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
         </div>
       </div>
       <!-- Modal -->
@@ -338,45 +336,7 @@
   </footer>
   <!-- Footer end -->
 
-  <script>
-    // get elements from document
-    const btns = document.querySelectorAll(".case-study-btn");
-    const modal = document.querySelector(".modal");
-
-    // change status function when element was clicked
-    const changeModalStatus = (type, cls, sty) => {
-      if (type == "remove") {
-        modal.classList.remove("show");
-        modal.classList.add("hide");
-      } else {
-        modal.classList.add("show");
-        modal.classList.remove("hide");
-      }
-      document.body.style.overflow = sty;
-    };
-
-    // listener for click to btn
-    btns.forEach((item) => {
-      return item.addEventListener("click", () =>
-        changeModalStatus("add", "show", "hidden")
-      );
-    });
-
-    const crossIcon = document.querySelector(".cross-btn");
-
-    // listener for click to cross icon btn
-    crossIcon.addEventListener("click", () =>
-      changeModalStatus("remove", "hide", "auto")
-    );
-
-    // listener for click to modal
-    modal.addEventListener("click", (e) => {
-      // check event for target and currentTarget
-      if (e.target === e.currentTarget) {
-        changeModalStatus("remove", "hide", "auto");
-      }
-    });
-  </script>
+  <script src="../js/coaching.js"></script>
 </body>
 
 </html>

@@ -1,14 +1,17 @@
 .service-menu-section {
   margin-bottom: 80px;
+
   .container {
     max-width: 1210px;
+
     h2 {
       color: #000101;
       text-align: center;
       font-family: "Noto Sans JP";
       font-size: 32px;
       font-weight: 700;
-      line-height: 200%; /* 64px */
+      line-height: 200%;
+      /* 64px */
       letter-spacing: 1.6px;
       text-align: center;
     }
@@ -18,18 +21,22 @@
         color: var(--Gold, #dca840);
         font-size: 16px;
         font-weight: 700;
-        line-height: 180%; /* 28.8px */
+        line-height: 180%;
+        /* 28.8px */
         margin-bottom: 24px;
       }
+
       .row {
         margin-bottom: 40px;
       }
+
       .cards {
         display: flex;
         flex-wrap: wrap;
         /* justify-content: space-between; */
         gap: 24px;
       }
+
       .card {
         border: 1px solid var(--Gray, #c5c5c5);
         background: #fff;
@@ -47,7 +54,8 @@
           text-align: center;
           font-size: 16px;
           font-weight: 700;
-          line-height: 160%; /* 25.6px */
+          line-height: 160%;
+          /* 25.6px */
           letter-spacing: 1.6px;
         }
       }
@@ -67,20 +75,51 @@
       font-family: "Noto Sans JP";
       font-size: 16px;
       font-weight: 400;
-      line-height: 180%; /* 28.8px */
+      line-height: 180%;
+      /* 28.8px */
     }
 
     .underlined {
       margin-bottom: 40px;
     }
+
     p {
       color: #000;
       text-align: center;
       font-size: 16px;
       font-weight: 400;
-      line-height: 180%; /* 28.8px */
+      line-height: 180%;
+      /* 28.8px */
       max-width: 1000px;
       margin: 0 auto;
     }
   }
+}
+
+
+
+
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 100;
+  font-size: 16px;
+  color: #333;
+  max-width: 400px;
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.tooltip span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
 }

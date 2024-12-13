@@ -6,223 +6,310 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="../style/styles.css" />
+  <link rel="stylesheet" href="../style/business.css" />
   <title>Business Page</title>
 </head>
 
-<body class="responsive-container">
+<body>
   <header class="header">
-    <div class="nav-container responsive-container">
-      <a href="/" class="nav-logo">
-        <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40" />
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="../assets/img/logo.png" alt="GoldenMessage">
       </a>
       <nav class="nav">
-        <a href="/service">サービス</a>
-        <a href="/about">About us</a>
-        <a href="/mission">ミッション・バリュー</a>
-        <a href="/company">お知らせ</a>
-        <a href="/recruit">採用情報</a>
-        <a href="/contact" class="btn-contact">お問い合わせ</a>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu">⇶</label>
+        <ul class="nav__list">
+          <label for="menu" class="menu times">X</label>
+          <li><a class="list__link" href="/service">サービス</a></li>
+          <li><a class="list__link" href="/about">会社概要</a></li>
+          <li><a class="list__link" href="/mission">ミッション・バリュー</a></li>
+          <li><a class="list__link" href="/news">お知らせ</a></li>
+          <li><a class="list__link" href="/recruit">採用情報</a></li>
+          <li><a class="list__link contact-btn" href="/contact">お問い合わせ</a></li>
+        </ul>
       </nav>
     </div>
+    <div class="contact-header">
+      <h1 class="contact-title">いま、自分にないものを。<br>
+        まだ、答えのないことを。 </h1>
+    </div>
   </header>
-  <div class="business-hero">
-    <img class="business-hero" src="../assets/business/business-hero.png" alt="" />
-    <h1 class="business-hero-title">
-      いま、自分にないものを。 まだ、答えのないことを。
-    </h1>
-  </div>
-  <h2 class="golden-title mt-5 text-center">Golden Message について</h2>
-  <p style="
-        font-family:
-          Bradley Hand,
-          serif;
-      " class="mt-4 text-center about-title text-black mb-3">
-    About Us
-  </p>
+  <main class="main">
+    <section class="main__top-info">
+      <p class="main__top-preTitle">
+        Golden Message について
+      </p>
+      <h2 class="main__top-title">
+        About Us
+      </h2>
+      <p class="main__top-text">
+        いま社会で活躍している大人たちも、はじめは何者でもなかった。<br>
+        誰もがふつうの若者で、同じように将来への不安を抱えていた。<br>
+        でも、まだ何者でもない状態って、最強じゃないですか。何者でもないからこそ、何にでもチャレンジできる。<br>
+        <br>
+        答えがない道を進むのは不安だけども、道のりが見渡せたらたぶん、つまらない。<br>
+        規格外なことに挑戦し、新しい人と出会い、ぶつかり、励まし合い、答えを自らが導き出していく。<br>
+        <br>
+        「迷ったら、自分にないものが見つかりそうな道へ」「悩んだら、答えがまだない道へ」を何者でもない自分へのルールにしてみるのはどうだろう。
+      </p>
+    </section>
+    <section class="businessField">
+      <span class="bg__text">
+        BUSINESS
+      </span>
+      <p class="businessField__text">
+        事業分野
+      </p>
+      <h3 class="businessField__title">
+        OUR BUSINESS FIELD
+      </h3>
+    </section>
 
-  <p class="text-center text-black">
-    いま社会で活躍している大人たちも、はじめは何者でもなかった。
-  </p>
-  <p class="text-center text-black">
-    誰もがふつうの若者で、同じように将来への不安を抱えていた。
-  </p>
-  <p class="text-center mb-3 text-black">
-    でも、まだ何者でもない状態って、最強じゃないですか。何者でもないからこそ、何にでもチャレンジできる。
-  </p>
-  <p class="text-center text-black">
-    答えがない道を進むのは不安だけども、道のりが見渡せたらたぶん、つまらない。
-  </p>
-  <p class="text-center mb-3 text-black">
-    規格外なことに挑戦し、新しい人と出会い、ぶつかり、励まし合い、答えを自らが導き出していく。
-  </p>
-  <p class="text-center text-black">
-    「迷ったら、自分にないものが見つかりそうな道へ」「悩んだら、答えがまだない道へ」を何者でもない自分へのルールにしてみるのはどうだろう。
-  </p>
-
-  <div class="mt-5 mb-3">
-    <img src="../assets/business/diagram.png" width="100%" alt="" />
-  </div>
-  <div class="flex justify-center mb-3">
-    <button class="btn-news">選考に応募する</button>
-  </div>
-  <h2 class="golden-title text-center">社内情報</h2>
-  <h2 style="
-        font-family:
-          Bradley Hand,
-          serif;
-        color: black;
-      " class="text-center mb-3">
-    INFOGRAPHICS
-  </h2>
-  <img src="../assets/business/info.png" class="mb-3" width="100%" alt="" />
-
-  <img src="../assets/business/recruitment.png" class="mb-3" width="100%" alt="" />
-  <div class="business-table mb-3">
-    <div class="business-table-data">
-      <div class="business-table-data-heading">募集職種</div>
-      <div class="business-table-data-body">
-        <p>総合職（営業職、人事職、カスタマーサポート職ほか）</p>
+    <section class="diagram">
+      <img src="../assets/img/diagram.png" alt="">
+      <div class="diagram__btn">
+        <a href="#!" class="diagram__link">選考に応募する</a>
       </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">業務内容</div>
-      <div class="business-table-data-body">
-        <p>
-          ・学生コミュニティ事業の総合運営（主に集客・学生対応・企業開拓）
+    </section>
+    <section class="businessField">
+      <p class="businessField__text">
+        社内情報
+      </p>
+      <h3 class="businessField__title">
+        INFOGRAPHICS
+      </h3>
+    </section>
+    <section class="infographics">
+      <img src="../assets/img/info.png" alt="">
+    </section>
+    <section class="businessField">
+      <span class="bg__text">
+        RECRUIT
+      </span>
+      <p class="businessField__text">
+        募集要項
+      </p>
+      <h3 class="businessField__title">
+        REQUIREMENTS
+      </h3>
+    </section>
+    <section class="requirements">
+      <div class="req__grid">
+        <h3 class="req__title">
+          募集職種
+        </h3>
+        <p class="req__text">
+          総合職（営業職、人事職、カスタマーサポート職ほか
         </p>
-        <p>・スクール事業の総合運営（主に集客・インサイドセールス）</p>
-        <p>
-          ・キャリアコーチング事業の総合運営（主に集客・コーチングの実施）
-        </p>
-        <p>・その他、各種インサイドセールス・フィールドセールス</p>
-        <p>・その他、営業コンサルティング・人事コンサルティング</p>
-        <p>・人事業務（主に新卒採用・中途採用および研修）</p>
-        <p>・新規事業、プロジェクトの立ち上げ</p>
       </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">給与</div>
-      <div class="business-table-data-body">
-        <p>・新卒採用：初任給 月給30万円</p>
-        <p>・中途採用：月給30万円以上（経験、能力によって判断）</p>
-        <p>・いずれも固定残業代30時間分を含む</p>
+      <div class="req__grid">
+        <h3 class="req__title">
+          業務内容
+        </h3>
+        <ul>
+          <li>
+            <p class="req__text">学生コミュニティ事業の総合運営（主に集客・学生対応・企業開拓）</p>
+          </li>
+          <li>
+            <p class="req__text">スクール事業の総合運営（主に集客・インサイドセールス）</p>
+          </li>
+          <li>
+            <p class="req__text">キャリアコーチング事業の総合運営（主に集客・コーチングの実施）</p>
+          </li>
+          <li>
+            <p class="req__text">その他、各種インサイドセールス・フィールドセールス</p>
+          </li>
+          <li>
+            <p class="req__text">その他、営業コンサルティング・人事コンサルティング</p>
+          </li>
+          <li>
+            <p class="req__text">人事業務（主に新卒採用・中途採用および研修）</p>
+          </li>
+          <li>
+            <p class="req__text">新規事業、プロジェクトの立ち上げ</p>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">昇給・賞与</div>
-      <div class="business-table-data-body">
-        <p>・昇給：随時（最大年2回）</p>
-        <p>・賞与：決算賞与（6月末）</p>
+      <div class="req__grid">
+        <h3 class="req__title">
+          給与
+        </h3>
+        <ul>
+          <li>
+            <p class="req__text">新卒採用：初任給 月給30万円</p>
+          </li>
+          <li>
+            <p class="req__text">中途採用：月給30万円以上（経験、能力によって判断）</p>
+          </li>
+          <li>
+            <p class="req__text">　※いずれも固定残業代30時間分を含む</p>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">契約形態</div>
-      <div class="business-table-data-body">
-        <p>正社員（試用期間3ヵ月）</p>
-        <p>※試用期間中の待遇に差はありません</p>
+      <div class="req__grid">
+        <h3 class="req__title">
+          給与昇給・賞与
+        </h3>
+        <ul>
+          <li>
+            <p class="req__text">昇給：随時（最大年2回）</p>
+          </li>
+          <li>
+            <p class="req__text">賞与：決算賞与（6月末）</p>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">勤務地</div>
-      <div class="business-table-data-body">
-        <p>本社または都内各拠点、大阪</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">勤務時間</div>
-      <div class="business-table-data-body">
-        <p>9:00~18:00 （一部例外あり）</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">休日・休暇</div>
-      <div class="business-table-data-body">
-        <p>・完全週休2日制（原則、土日祝休み）</p>
-        <p>・年末年始休暇（5日間）</p>
-        <p>・慶弔休暇</p>
-        <p>・年次有給休暇</p>
-        <p>・産前産後休暇</p>
-        <p>・育児休暇</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">待遇・福利厚生</div>
-      <div class="business-table-data-body">
-        <p>
-          ・社会保険完備（労働者災害補償保険、雇用保険、健康保険、厚生年金保険）
-        </p>
-        <p>・定期健康診断</p>
-        <p>・交通費全額支給</p>
-        <p>・ルームシェア型社宅</p>
-        <p>・各種研修制度</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="golden-title text-center">採用担当からのメッセージ</h2>
-  <h2 style="
-        font-family:
-          Bradley Hand,
-          serif;
-        color: black;
-      " class="text-center mb-3 text-3xl">
-    MESSAGE
-  </h2>
-  <p class="font-light mb-3 text-black">Internship</p>
-  <h2 class="business-heading text-xl font-bold mb-3">
-    「圧倒的機会に自走を。」~
-    自分で未来を切り拓く、前例は倣うのではなく、創るもの。~
-  </h2>
-
-  <div class=" gap-5 intern-container">
-    <div class="flex-6">
-      <p class="mb-3 text-black">
-        新卒・中途を問わず、GoldenMessageが求めているのは「自分の能力や活躍フィールド制限せず、何にでも挑戦できる人」です。そして、もうひとつ重要なのは、その挑戦の中で掲げたゴールを達成するための具体的な努力を自発的にできる「自走する人」であることです。
-      </p>
-      <p class="mb-3 text-black">
-        高い能力と意欲を持ち、優れたパフォーマンスを発揮する仲間には、年齢に関係なくその才能を最大限に伸ばせるよう、会社としても後押しするカルチャーがあります。だって、現に大学3年生をCSO（最高戦略責任者）に任命しているわけですから（笑）
-      </p>
-      <p class="mb-3 text-black">
-        また、GoldenMessageはベンチャー企業の中でも、とことんベンチャー企業です。そこには、日常的に成長を実感できる瞬間が溢れていることは確かです。しかしながら、まだまだ社内ではあらゆる前例が少ないからこそ、自分その前例を創り社内の第一人者になるという気概も求められます。
-      </p>
-      <p class="mb-3 text-black">
-        前例がたくさんあるような、一流といわれる企業で安定を取るのも立派な選択ですが、ここまでお読みいただいたなら、180度逆の選択肢に心が躍るのではないでしょうか？
-      </p>
-      <p class="mb-3 text-black">
-        ビジネスアスリートとして、Goldenなキャリアにチャレンジしませんか？まずはカジュアル面談から。お気軽にご応募お待ちしております。
-      </p>
-    </div>
-    <div class="flex-2">
-      <img src="../assets/business/intern.png" width="100%" alt="" />
-    </div>
-  </div>
-
-  <section class="cta">
-    <a href="/recruit" class="cta-item">
-      <img class="footer-image-slider" src="../assets/business/footer3.png" alt="Recruit" width="800" height="600" />
-      <div class="cta-content">
+      <div class="req__grid">
+        <h3 class="req__title">
+          契約形態
+        </h3>
         <div>
-          <h2>New Graduate</h2>
-          <p>新卒採用</p>
+          <p class="req__text">正社員（試用期間3ヵ月）</p>
+          <p class="req__text">※試用期間中の待遇に差はありません</p>
         </div>
-        <div class="cta-arrow">→</div>
+
+        </ul>
       </div>
-    </a>
-    <a href="/contact" class="cta-item">
-      <img class="footer-image-slider" alt="Contact" src="../assets/business/footer4.png" width="800" height="600" />
-      <div class="cta-content">
+      <div class="req__grid">
+        <h3 class="req__title">
+          勤務地
+        </h3>
+        <p class="req__text">
+          本社または都内各拠点、大阪
+        </p>
+      </div>
+      <div class="req__grid">
+        <h3 class="req__title">
+          勤務時間
+        </h3>
+        <p class="req__text">
+          9:00~18:00 （一部例外あり）
+        </p>
+      </div>
+      <div class="req__grid">
+        <h3 class="req__title">
+          休日・休暇
+        </h3>
+        <ul>
+          <li>
+            <p class="req__text">完全週休2日制（原則、土日祝休み）</p>
+          </li>
+          <li>
+            <p class="req__text">年末年始休暇（5日間）</p>
+          </li>
+          <li>
+            <p class="req__text">慶弔休暇</p>
+          </li>
+          <li>
+            <p class="req__text">年次有給休暇</p>
+          </li>
+          <li>
+            <p class="req__text">産前産後休暇</p>
+          </li>
+          <li>
+            <p class="req__text">育児休暇</p>
+          </li>
+        </ul>
+      </div>
+      <div class="req__grid">
+        <h3 class="req__title">
+          待遇・福利厚生
+        </h3>
+        <ul>
+          <li>
+            <p class="req__text">社会保険完備（労働者災害補償保険、雇用保険、健康保険、厚生年金保険）</p>
+          </li>
+          <li>
+            <p class="req__text">定期健康診断</p>
+          </li>
+          <li>
+            <p class="req__text">交通費全額支給</p>
+          </li>
+          <li>
+            <p class="req__text">ルームシェア型社宅</p>
+          </li>
+          <li>
+            <p class="req__text">各種研修制度</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="businessField">
+      <p class="businessField__text">
+        社内情報
+      </p>
+      <h3 class="businessField__title">
+        INFOGRAPHICS
+      </h3>
+    </section>
+    <section class="message">
+      <div class="message__left">
+        <p class="message__pte-title">
+          Internship
+        </p>
+        <h2 class="message__title">
+          「圧倒的機会に自走を。」~ 自分で未来を切り拓く、前例は倣うのではなく、創るもの。~
+        </h2>
+        <div class="line"></div>
+        <p class="message__text">
+          新卒・中途を問わず、GoldenMessageが求めているのは「自分の能力や活躍フィールド制限せず、何にでも挑戦できる人」です。そして、もうひとつ重要なのは、その挑戦の中で掲げたゴールを達成するための具体的な努力を自発的にできる「自走する人」であることです。
+          <br>
+          <br>
+          高い能力と意欲を持ち、優れたパフォーマンスを発揮する仲間には、年齢に関係なくその才能を最大限に伸ばせるよう、会社としても後押しするカルチャーがあります。だって、現に大学3年生をCSO（最高戦略責任者）に任命しているわけですから（笑）
+          <br>
+          <br>
+          また、GoldenMessageはベンチャー企業の中でも、とことんベンチャー企業です。そこには、日常的に成長を実感できる瞬間が溢れていることは確かです。しかしながら、まだまだ社内ではあらゆる前例が少ないからこそ、自分その前例を創り社内の第一人者になるという気概も求められます。
+          <br>
+          <br>
+          前例がたくさんあるような、一流といわれる企業で安定を取るのも立派な選択ですが、ここまでお読みいただいたなら、180度逆の選択肢に心が躍るのではないでしょうか？
+          <br>
+          <br>
+          ビジネスアスリートとして、Goldenなキャリアにチャレンジしませんか？まずはカジュアル面談から。お気軽にご応募お待ちしております。
+        </p>
+        <p class="message__under-text">
+          GoldenMessage株式会社　人事部　採用担当
+        </p>
+      </div>
+      <div class="message__right">
+        <img src="../assets/img/message__img.png" alt="">
+      </div>
+    </section>
+    <div class="main__option">
+      <div class="option__left option__all">
+        <img src="../assets/img/business__option.png" class="option__img" alt="">
         <div>
-          <h2>Mid-career</h2>
-          <p>中途採用</p>
+          <h2 class="option__title">
+            Recriut
+          </h2>
+          <p class="option__subtitle">
+            採用情報
+          </p>
         </div>
-        <div class="cta-arrow">→</div>
+        <a class="arrow" href="#!">
+          <img src="../assets/img/arrow.png" alt="">
+        </a>
       </div>
-    </a>
-  </section>
+      <div class="option__right option__all">
+        <img src="../assets/img/business__option2.png" class="option__img" alt="">
+        <div>
+          <h2 class="option__title">
+            Contact
+          </h2>
+          <p class="option__subtitle">
+            問い合わせ
+          </p>
+        </div>
+        <a class="arrow" href="#!">
+          <img src="../assets/img/arrow.png" alt="">
+        </a>
+      </div>
+    </div>
+  </main>
   <footer class="footer">
     <div class="footer-container">
       <a href="" class="footer-logo">
-        <img src="../assets/shared/signature.png" alt="Golden Message">
+        <img src="../assets/img/footer_logo.png" alt="Golden Message">
       </a>
       <nav class="footer-nav">
         <div class="footer-nav-column">
@@ -253,7 +340,7 @@
     </div>
     <div class="footer-bottom">
       <a href="#">プライバシーポリシー</a>
-      <span>© copyright 2024 Golden Messeage</span>
+      <span>© copyright 2024 Golden Message</span>
     </div>
   </footer>
 </body>

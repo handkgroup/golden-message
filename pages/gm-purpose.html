@@ -6,135 +6,154 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="../style/styles.css" />
+  <link rel="stylesheet" href="../style/pupose.css" />
   <title>GM Purpose</title>
 </head>
 
-<body class="responsive-container">
+<body>
   <header class="header">
-    <div class="nav-container responsive-container">
-      <a href="/" class="nav-logo">
-        <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40" />
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="../assets/img/logo-dark.png" alt="GoldenMessage">
       </a>
       <nav class="nav">
-        <a href="/service">サービス</a>
-        <a href="/about">About us</a>
-        <a href="/mission">ミッション・バリュー</a>
-        <a href="/company">お知らせ</a>
-        <a href="/recruit">採用情報</a>
-        <a href="/contact" class="btn-contact">お問い合わせ</a>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu">⇶</label>
+        <ul class="nav__list">
+          <label for="menu" class="menu times">X</label>
+          <li><a class="list__link" href="/service">サービス</a></li>
+          <li><a class="list__link" href="/about">会社概要</a></li>
+          <li><a class="list__link" href="/mission">ミッション・バリュー</a></li>
+          <li><a class="list__link" href="/news">お知らせ</a></li>
+          <li><a class="list__link" href="/recruit">採用情報</a></li>
+          <li><a class="list__link contact-btn" href="/contact">お問い合わせ</a></li>
+        </ul>
       </nav>
     </div>
+    <p class="top__text">TOP　>　ミッション・ビジョン・バリュー</p>
+    <div class="contact-header">
+      <p class="bg-text">GM <br> PURPOSE
+      </p>
+      <div>
+        <h1 class="contact-title">GM PURPOSE</h1>
+        <p class="contact-subtitle">ミッション・ビジョン・バリュー</p>
+      </div>
+    </div>
   </header>
-  <br />
-  <br />
-  <div class="flex pl-1 mt-5">
-    <a href="#"> TOP　>　ミッション・ビジョン・バリュー </a>
-  </div>
-  <section class="hero">
-    <span class="hero-bg-text">GM PURPOSE</span>
-    <div class="hero-container">
-      <h1>GM PURPOSE</h1>
-      <p>ミッション・ビジョン・バリュー</p>
-    </div>
-  </section>
-
-  <p class="text-center font-light text-sm">Mission</p>
-  <h2 class="title text-center title-underline-orange">存在意義・使命</h2>
-  <div class="mt-5"></div>
-  <h2 class="title text-center">
-    学びと出会いの掛け算で、明日の幸せをつくる
-  </h2>
-  <p class="center font-bold">
-    Multiplying "Learn" and "Connect", Creating happiness for tomorrow.
-  </p>
-  <div class="mt-5"></div>
-  <p class="text-center font-light">
-    人はもっとジブンらしく、イキイキと輝ける。本当は挑戦したいのに、スキル不足が原因で諦めてしまったい、自信が持てず一歩を踏み出せなかったり。もっともっと、挑戦に溢れ、一人ひとりが自分の人生に自信と誇りを持てる社会へ。私たちは、テクノロジーと創意工夫、そして何よりのベンチャースピリットを全面に表現し、誰もが健康に、自分らしく、自信に満ちたキャリア形成を実現できる社会を目指し、「学び」と「出会い」を中心としたサービスを追求してまいります。
-  </p>
-  <div style="height: 120px"></div>
-
-  <p class="text-center font-light text-sm">VISION 2030</p>
-  <h2 class="title text-center title-underline-orange">目指す未来</h2>
-  <div class="mt-5"></div>
-  <div class="mt-5"></div>
-  <h2 class="title text-center">
-    コミュニティプラットフォームとコーチングで
-  </h2>
-  <h2 class="title text-center">若者から最も頼られる存在になる</h2>
-  <div class="mt-5"></div>
-  <div class="mt-5"></div>
-  <p class="text-center font-light">若者から最も頼られる存在になる</p>
-  <div class="mt-5"></div>
-  <div class="mt-5"></div>
-  <p class="text-center font-light">
-    私たちは、「やりたい」「なりたい」の実現を伴走し、その人や、その企業の成長に貢献する会社です。一人ひとりが自分らしいキャリアを選択するためのコミュニティプラットフォームや、そのキャリアをより一層充実させるためのコーチングサービスの提供に尽力します。
-  </p>
-  <div class="mt-5"></div>
-  <div class="mt-5"></div>
-  <p class="text-center font-light">
-    まずは、2030年、未来を担う若い世代からもっとも頼られるサービスに成長いたします。
-  </p>
-  <div style="height: 120px"></div>
-  <p class="text-center font-light text-sm">VALUE</p>
-  <h2 class="title text-center title-underline-orange">​行動指針・価値観</h2>
-  <div style="height: 20px"></div>
-
-  <div class="flex code-of-conduct">
-    <div class="flex-3">
-      <div class="title">3つのGMバリュー</div>
-      <div class="mt-5"></div>
-      <p class="font-light">
-        GoldenMessageは、会社と個人の“圧倒的な成長”を、全員で共に目指し続けます。
+  <main>
+    <section class="mission">
+      <p class="mission__f-text">Mission</p>
+      <h2 class="mission__title">
+        存在意義・使命
+      </h2>
+      <div class="line"></div>
+      <h2 class="mission__title">
+        学びと出会いの掛け算で、明日の幸せをつくる
+      </h2>
+      <p class="mission__pre-title">
+        Multiplying "Learn" and "Connect", Creating happiness for tomorrow.
       </p>
-      <p class="font-light">
-        そして、それをやり遂げるための行動指針が「GMバリュー」です。
+      <p class="mission__text">
+        人はもっとジブンらしく、イキイキと輝ける。<br>
+        本当は挑戦したいのに、スキル不足が原因で諦めてしまったい、自信が持てず一歩を踏み出せなかったり。<br>
+        もっともっと、挑戦に溢れ、一人ひとりが自分の人生に自信と誇りを持てる社会へ。<br>
+        私たちは、テクノロジーと創意工夫、そして何よりのベンチャースピリットを全面に表現し、誰もが健康に、自分らしく、自信に満ちたキャリア形成を実現できる社会を目<br>
+        指し、「学び」と「出会い」を中心としたサービスを追求してまいります。<br>
       </p>
-      <div class="mt-4"></div>
-      <p class="font-bold">Golden Speed</p>
-      <p class="font-light">スピードが大事。いや、スピードが最優先だ。</p>
-      <p class="font-light">スピードを強みに、我々は戦おう。</p>
-      <div class="mt-4"></div>
-      <p class="font-bold">Golden GRID</p>
-      <p class="font-light">ピカピカに、やり抜く。ゴリゴリに、やり抜く。</p>
-      <p class="font-light">とにかく、ゴールデンにやり抜こう。</p>
-      <div class="mt-4"></div>
-      <p class="font-bold">Golden Interact</p>
-      <p class="font-light">交流重視。向き合い、話し合い、認め合う。</p>
-      <p class="font-light">迷ったら、困ったら、助け合おう。</p>
-    </div>
-    <div class="flex-2 justify-center items-center">
-      <img src="../assets/gm-purpose/chart.png" width="100%" alt="" />
-    </div>
-  </div>
+    </section>
+    <section class="mission vision">
+      <p class="mission__f-text">VISION 2030</p>
+      <h2 class="mission__title">
+        目指す未来
+      </h2>
+      <div class="line"></div>
+      <h2 class="mission__title">
+        コミュニティプラットフォームとコーチングで <br>
+        若者から最も頼られる存在になる
+      </h2>
+      <p class="mission__pre-title">
+        若者から最も頼られる存在になる
+      </p>
+      <p class="mission__text">
+        私たちは、「やりたい」「なりたい」の実現を伴走し、その人や、その企業の成長に貢献する会社です。一人ひとりが自分らしいキャリアを選択するためのコミュニティプ<br>
+        ラットフォームや、そのキャリアをより一層充実させるためのコーチングサービスの提供に尽力します。<br><br>
+        まずは、2030年、未来を担う若い世代からもっとも頼られるサービスに成長いたします。<br>
+      </p>
+    </section>
+    <section class="value">
+      <p class="mission__f-text">VALUE</p>
+      <h2 class="mission__title">
+        ​行動指針・価値観
+      </h2>
+      <div class="line"></div>
+      <div class="value__grid">
+        <div class="value__left">
+          <h2 class="mission__title">
+            3つのGMバリュー
+          </h2>
+          <p class="mission__pre-title">
+            GoldenMessageは、会社と個人の“圧倒的な成長”を、全員で共に目指し続けます。<br>
+            そして、それをやり遂げるための行動指針が「GMバリュー」です。
+          </p>
+          <p class="mission__text value__text">
+            <span>Golden Speed</span>
+            スピードが大事。いや、スピードが最優先だ。<br>
+            スピードを強みに、我々は戦おう。
+            <br>
+            <br>
+            <span>Golden GRID</span>
+            ピカピカに、やり抜く。ゴリゴリに、やり抜く。<br>
+            とにかく、ゴールデンにやり抜こう。
+            <br>
+            <br>
+            <span>Golden Interact</span>
+            交流重視。向き合い、話し合い、認め合う。<br>
+            迷ったら、困ったら、助け合おう。
+          </p>
+        </div>
+        <div class="value__right">
+          <img src="../assets/img/chart.png" alt="">
+        </div>
+      </div>
+    </section>
 
-  <div style="height: 120px"></div>
-  <section class="cta">
-    <a href="/recruit" class="cta-item">
-      <img class="footer-image-slider" src="../assets/shared/footer1.png" alt="Recruit" width="800" height="600" />
-      <div class="cta-content">
+
+
+    <section class="main__option">
+      <div class="option__left option__all">
+        <img src="../assets/img/recruit.png" class="option__img" alt="">
         <div>
-          <h2>Recruit</h2>
-          <p>採用情報</p>
+          <h2 class="option__title">
+            Recriut
+          </h2>
+          <p class="option__subtitle">
+            採用情報
+          </p>
         </div>
-        <div class="cta-arrow">→</div>
+        <a class="arrow" href="#!">
+          <img src="../assets/img/arrow.png" alt="">
+        </a>
       </div>
-    </a>
-    <a href="/contact" class="cta-item">
-      <img class="footer-image-slider" src="../assets/shared/foooter2.png" alt="Contact" width="800" height="600" />
-      <div class="cta-content">
+      <div class="option__right option__all">
+        <img src="../assets/img/contact.png" class="option__img" alt="">
         <div>
-          <h2>Contact</h2>
-          <p>問い合わせ</p>
+          <h2 class="option__title">
+            Contact
+          </h2>
+          <p class="option__subtitle">
+            問い合わせ
+          </p>
         </div>
-        <div class="cta-arrow">→</div>
+        <a class="arrow" href="#!">
+          <img src="../assets/img/arrow.png" alt="">
+        </a>
       </div>
-    </a>
-  </section>
+    </section>
+  </main>
   <footer class="footer">
     <div class="footer-container">
       <a href="" class="footer-logo">
-        <img src="../assets/shared/signature.png" alt="Golden Message">
+        <img src="../assets/img/footer_logo.png" alt="Golden Message">
       </a>
       <nav class="footer-nav">
         <div class="footer-nav-column">
@@ -165,7 +184,7 @@
     </div>
     <div class="footer-bottom">
       <a href="#">プライバシーポリシー</a>
-      <span>© copyright 2024 Golden Messeage</span>
+      <span>© copyright 2024 Golden Message</span>
     </div>
   </footer>
 </body>

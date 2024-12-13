@@ -5,39 +5,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GoldenMessage - About Us</title>
-  <link rel="stylesheet" href="../style/styles.css" />
+  <link rel="stylesheet" href="../style/about.css" />
 </head>
 
 <body class="responsive-container">
   <header class="header">
-    <div class="nav-container responsive-container">
-      <a href="/" class="nav-logo">
-        <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40" />
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="../assets/img/logo-dark.png" alt="GoldenMessage">
       </a>
       <nav class="nav">
-        <a href="/service">サービス</a>
-        <a href="/about">About us</a>
-        <a href="/mission">ミッション・バリュー</a>
-        <a href="/company">お知らせ</a>
-        <a href="/recruit">採用情報</a>
-        <a href="/contact" class="btn-contact">お問い合わせ</a>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu">⇶</label>
+        <ul class="nav__list">
+          <label for="menu" class="menu times">X</label>
+          <li><a class="list__link" href="/service">サービス</a></li>
+          <li><a class="list__link" href="/about">会社概要</a></li>
+          <li><a class="list__link" href="/mission">ミッション・バリュー</a></li>
+          <li><a class="list__link" href="/news">お知らせ</a></li>
+          <li><a class="list__link" href="/recruit">採用情報</a></li>
+          <li><a class="list__link contact-btn" href="/contact">お問い合わせ</a></li>
+        </ul>
       </nav>
     </div>
-  </header>
-
-  <main>
-    <br />
-    <br />
-    <div class="flex pl-1 mt-5">
-      <a href="#"> TOP　>　ミッション・ビジョン・バリュー </a>
-    </div>
-    <section class="hero">
-      <span class="hero-bg-text">About us</span>
-      <div class="hero-container">
-        <h1>About us</h1>
-        <p>会社概要</p>
+    <p class="top__text">TOP　>　会社概要</p>
+    <div class="contact-header">
+      <p class="bg-text">ABOUT US</p>
+      <div>
+        <h1 class="contact-title">ABOUT US</h1>
+        <p class="contact-subtitle">会社概要</p>
       </div>
-    </section>
+    </div>
+  </header>
+  <main>
 
     <section class="message">
       <h2>MESSAGE</h2>
@@ -83,7 +83,6 @@
         </div>
       </div>
     </section>
-
     <section class="company-info">
       <div class="company-info-item">
         <div class="company-info-item-heading">会社名</div>
@@ -129,35 +128,42 @@
         </div>
       </div>
     </section>
-
-    <section class="cta">
-      <a href="/recruit" class="cta-item">
-        <img class="footer-image-slider" src="../assets/shared/footer1.png" alt="Recruit" width="800" height="600" />
-        <div class="cta-content">
-          <div>
-            <h2>Recruit</h2>
-            <p>採用情報</p>
-          </div>
-          <div class="cta-arrow">→</div>
+    <section class="main__option">
+      <div class="option__left option__all">
+        <img src="../assets/img/recruit.png" class="option__img" alt="">
+        <div>
+          <h2 class="option__title">
+            Recriut
+          </h2>
+          <p class="option__subtitle">
+            採用情報
+          </p>
         </div>
-      </a>
-      <a href="/contact" class="cta-item">
-        <img class="footer-image-slider" src="../assets/shared/foooter2.png" alt="Contact" width="800" height="600" />
-        <div class="cta-content">
-          <div>
-            <h2>Contact</h2>
-            <p>問い合わせ</p>
-          </div>
-          <div class="cta-arrow">→</div>
+        <a class="arrow" href="#!">
+          <img src="../assets/img/arrow.png" alt="">
+        </a>
+      </div>
+      <div class="option__right option__all">
+        <img src="../assets/img/contact.png" class="option__img" alt="">
+        <div>
+          <h2 class="option__title">
+            Contact
+          </h2>
+          <p class="option__subtitle">
+            問い合わせ
+          </p>
         </div>
-      </a>
+        <a class="arrow" href="#!">
+          <img src="../assets/img/arrow.png" alt="">
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-container">
       <a href="" class="footer-logo">
-        <img src="../assets/shared/signature.png" alt="Golden Message">
+        <img src="../assets/img/footer_logo.png" alt="Golden Message">
       </a>
       <nav class="footer-nav">
         <div class="footer-nav-column">
@@ -188,11 +194,9 @@
     </div>
     <div class="footer-bottom">
       <a href="#">プライバシーポリシー</a>
-      <span>© copyright 2024 Golden Messeage</span>
+      <span>© copyright 2024 Golden Message</span>
     </div>
   </footer>
-
-  <script src="../script.js"></script>
 </body>
 
 </html>
