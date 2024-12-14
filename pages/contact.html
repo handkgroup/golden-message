@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせ - GoldenMessage</title>
     <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../style/utility/utilities.css">
 </head>
 
 <body>
@@ -14,21 +15,23 @@
             <a href="/" class="logo">
                 <img src="../assets/img/logo-dark.png" alt="GoldenMessage">
             </a>
-            <nav class="nav">
-                <input type="checkbox" id="menu">
-                <label for="menu" class="menu">⇶</label>
-                <ul class="nav__list">
-                    <label for="menu" class="menu times">X</label>
-                    <li><a class="list__link" href="/service">サービス</a></li>
-                    <li><a class="list__link" href="/about">About us</a></li>
-                    <li><a class="list__link" href="/mission">ミッション・バリュー</a></li>
-                    <li><a class="list__link" href="/news">お知らせ</a></li>
-                    <li><a class="list__link" href="/recruit">採用情報</a></li>
-                    <li><a class="list__link contact-btn" href="/contact">お問い合わせ</a></li>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <ul class="nav__list" id="nav-menu">
+                    <li><a class="list__link" href="./service.html">サービス</a></li>
+                    <li><a class="list__link" href="./about.html">会社概要</a></li>
+                    <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+                    <li><a class="list__link" href="./news.html">お知らせ</a></li>
+                    <li><a class="list__link" href="./business.html">採用情報</a></li>
+                    <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
                 </ul>
-            </nav>
         </div>
-        <p class="top__text">TOP　>　お問い合わせ</p>
+        <div class="flex pl-1 mt-16 ml-36 text-black text-margin left-text">
+            <a href="../index.html"> TOP　</a> > <a href="./contact.html">　お問い合わせ</a>
+        </div>
         <div class="contact-header">
             <p class="bg-text">CONTACT <br> FORM</p>
             <div>
@@ -107,17 +110,19 @@
                     </ul>
                 </div>
                 <div class="footer-nav-column">
-                    <h3>会社概要</h3>
+                    <h3>
+                        <a href="./about.html">会社概要</a>
+                    </h3>
                     <ul>
-                        <li><a href="#">ミッション・バリュー</a></li>
-                        <li><a href="#">お知らせ</a></li>
-                        <li><a href="#">採用情報</a></li>
+                        <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+                        <li><a href="./news.html">お知らせ</a></li>
+                        <li><a href="./business.html">採用情報</a></li>
                     </ul>
                 </div>
                 <div class="footer-nav-column">
                     <h3>その他</h3>
                     <ul>
-                        <li><a href="#">お問い合わせ</a></li>
+                        <li><a href="./contact.html">お問い合わせ</a></li>
                         <li><a href="#">個人情報保護方針</a></li>
                     </ul>
                 </div>
@@ -128,6 +133,7 @@
             <span>© copyright 2024 Golden Messeage</span>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

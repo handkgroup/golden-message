@@ -36,7 +36,29 @@ document.addEventListener("DOMContentLoaded", () => {
     '.news',
     '.about-section',
     '.service-section',
-    '.special-section'
+    '.special-section',
+    '.message',
+    '.company-info',
+    '.animate-about',
+    '.animate-numbers',
+    '.animate-requirements',
+    '.animate-message',
+    '.service',
+    '.feature',
+    '.feature-section',
+    '.mission-section',
+    '.service-section',
+    '.propose-section',
+    '.flow-section',
+    '.case-study-section',
+    '.mission-animate',
+    '.vision-animate',
+    '.purpose-value',
+    '.tab-container',
+    '.service-menu-section',
+    '.commitment-section',
+    '.mission-section',
+    '.main__grid'
   ];
 
   // Observe each section
@@ -116,3 +138,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, 400);
 });
+
+// Select burger menu, navigation, and header
+const burgerMenu = document.getElementById('burger-menu');
+const navMenu = document.getElementById('nav-menu');
+const header = document.querySelector('header');
+
+// Toggle classes to show/hide the menu
+burgerMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    burgerMenu.classList.toggle('active');
+    header.classList.toggle('active'); // Add or remove 'active' class on the header
+});
+

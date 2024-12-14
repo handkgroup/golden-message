@@ -12,29 +12,34 @@
   <title>News</title>
 </head>
 
-<body class="responsive-container">
+<body>
   <header class="header">
-    <div class="nav-container responsive-container">
+    <div class="nav-container">
       <a href="/" class="nav-logo">
         <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40" />
       </a>
-      <nav class="nav">
-        <a href="/service">サービス</a>
-        <a href="/about">About us</a>
-        <a href="/mission">ミッション・バリュー</a>
-        <a href="/company">お知らせ</a>
-        <a href="/recruit">採用情報</a>
-        <a href="/contact" class="btn-contact">お問い合わせ</a>
+      <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav" id="nav-menu">
+        <a href="./service.html">サービス</a>
+        <a href="./about.html">会社概要</a>
+        <a href="./gm-purpose.html">ミッション・バリュー</a>
+        <a href="./news.html">お知らせ</a>
+        <a href="./business.html">採用情報</a>
+        <a href="./contact.html" class="btn-contact">お問い合わせ</a>
       </nav>
     </div>
   </header>
   <br />
   <br />
-  <div class="flex pl-1 mt-5">
+  <div class="flex pl-1 mt-16 ml-36 text-margin left-text">
     <a href="#"> TOP　>　ミッション・ビジョン・バリュー </a>
   </div>
-  <section class="hero">
-    <span class="hero-bg-text">NEWS List</span>
+  <section class="hero purpose-hero">
+    <span class="hero-bg-text">NEWS <br> List</span>
     <div class="hero-container">
       <h1>NEWS</h1>
       <p>お知らせ一覧</p>
@@ -50,7 +55,7 @@
       <div data-tab="tab-3" class="tab-button">お知らせ</div>
       <div data-tab="tab-4" class="tab-button">お知らせ</div>
     </div>
-    <div class="tab-content">
+    <div class="tab-content text-black">
       <div id="tab-1" class="tab-panel">
         <div class="tab-panel-item">
           <div class="flex-2 justify-center text-xs flex items-center">
@@ -107,7 +112,7 @@
           <div class="flex-7 text-xs flex items-center">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
-          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center">
+          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center text-grey">
             >
           </div>
         </div>
@@ -121,7 +126,7 @@
           <div class="flex-7 text-xs flex items-center">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
-          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center">
+          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center text-grey">
             >
           </div>
         </div>
@@ -135,7 +140,7 @@
           <div class="flex-7 text-xs flex items-center">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
-          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center">
+          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center text-grey">
             >
           </div>
         </div>
@@ -149,7 +154,7 @@
           <div class="flex-7 text-xs flex items-center">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
-          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center">
+          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center text-grey">
             >
           </div>
         </div>
@@ -163,7 +168,7 @@
           <div class="flex-7 text-xs flex items-center">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
-          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center">
+          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center text-grey">
             >
           </div>
         </div>
@@ -179,7 +184,7 @@
           <div class="flex-7 text-xs flex items-center">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
-          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center">
+          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center text-grey">
             >
           </div>
         </div>
@@ -195,7 +200,7 @@
           <div class="flex-7 text-xs flex items-center">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
-          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center">
+          <div class="arrow flex-1 text-right pr-1 flex justify-center items-center text-grey">
             >
           </div>
         </div>
@@ -219,7 +224,7 @@
   <div class="" style="height: 70px"></div>
 
   <section class="cta">
-    <a href="/recruit" class="cta-item">
+    <a href="./business.html" class="cta-item">
       <img class="footer-image-slider" src="../assets/shared/footer1.png" alt="Recruit" width="800" height="600" />
       <div class="cta-content">
         <div>
@@ -229,7 +234,7 @@
         <div class="cta-arrow">→</div>
       </div>
     </a>
-    <a href="/contact" class="cta-item">
+    <a href="./contact.html" class="cta-item">
       <img class="footer-image-slider" src="../assets/shared/foooter2.png" alt="Contact" width="800" height="600" />
       <div class="cta-content">
         <div>
@@ -257,17 +262,19 @@
           </ul>
         </div>
         <div class="footer-nav-column">
-          <h3>会社概要</h3>
+          <h3>
+            <a href="./about.html">会社概要</a>
+          </h3>
           <ul>
-            <li><a href="#">ミッション・バリュー</a></li>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">採用情報</a></li>
+            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+            <li><a href="./news.html">お知らせ</a></li>
+            <li><a href="./business.html">採用情報</a></li>
           </ul>
         </div>
         <div class="footer-nav-column">
           <h3>その他</h3>
           <ul>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
             <li><a href="#">個人情報保護方針</a></li>
           </ul>
         </div>
@@ -279,6 +286,7 @@
     </div>
   </footer>
   <script src="../js/tabbar.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

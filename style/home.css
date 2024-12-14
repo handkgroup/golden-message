@@ -10,6 +10,7 @@
     justify-content: space-between;
     gap: 30px;
     align-items: center;
+    padding-top: 50px;
   }
 }
 .service_text {
@@ -75,7 +76,6 @@
   display: flex;
   gap: 30px;
   justify-content: space-between;
-  margin-bottom: 200px;
 }
 .card {
   .text_wrapper {
@@ -128,7 +128,32 @@
   width: 329px;
   height: 53px;
   box-shadow: 0 0 9px 4px rgba(0, 0, 0, 0.25);
-  background: #333;
+  background: #d60000;
   color: #fff;
   margin-bottom: 130px;
+}
+
+.black_btn:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: ripple 1.5s infinite;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 #d60000;
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(214, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(214, 0, 0, 0);
+  }
+}
+
+.gm-purpose-section {
+  color: #000 !important;
 }

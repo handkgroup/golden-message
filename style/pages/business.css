@@ -1,4 +1,160 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  width: 100%;
+  transition: top 0.3s, opacity 0.5s ease-in-out;
+}
+
+header.non-sticky {
+  z-index: 10;
+}
+
+header.non-sticky .logo-dark {
+  display: none;
+}
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+header.sticky .logo-light {
+  display: none;
+}
+
+header.sticky .logo-dark {
+  display: block;
+}
+.sticky a {
+  color: #333 !important;
+}
+
+.sticky a:last-of-type {
+  color: #fff !important;
+}
+
+.non-sticky .btn-contact {
+  background: #fff;
+  color: #000 !important;
+  animation: none;
+}
+
+header.transparent.non-sticky {
+  background: transparent;
+  box-shadow: none;
+}
+
+.transparent nav a {
+  color: #fff;
+}
+
+.transparent .btn-contact {
+  border: none;
+}
 .business-hero {
+  /*position: absolute;*/
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+.business-hero > h1 {
+  font-size: 72px;
+  max-width: 900px;
+}
+.business-hero-title {
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  width: 100%;
+  color: white;
+  z-index: 999;
+  &.animate {
+    animation: dash 2.5s ease-in-out forwards;
+  }
+}
+
+.about-title {
+  font-size: 32px;
+}
+
+.business-table {
+  width: 80%;
+  margin: 0 auto 52px;
+}
+
+.business-table-data {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  padding: 48px 16px;
+  border-bottom: 1px solid var(--text-color);
+}
+.business-table-data-heading {
+  align-self: center;
+  flex: 1;
+  font-weight: bolder;
+  color: black;
+}
+.business-table-data-body {
+  align-self: start;
+  flex: 6;
+  color: black;
+}
+
+.message-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.business-heading {
+  font-size: 32px;
+}
+
+.intern-container {
+  display: flex;
+}
+
+.grey-text-container {
+  position: relative;
+  margin: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.recruit-grey-text {
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 12.5vw;
+  font-weight: 700;
+  line-height: 240px;
+  letter-spacing: 0.16em;
+  color: rgba(197, 197, 197, 0.16);
+  position: absolute;
+  top: -60%;
+  left: 0;
+}
+
+.infographics-img {
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media (max-width: 1200px) {
+  .business-hero {
     /*position: absolute;*/
     width: 100%;
     top: 0;
@@ -6,66 +162,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 40vh;
-}
-.business-hero > h1 {
-    font-size: 4rem;
+    min-height: 20vh;
+  }
+  .business-hero > h1 {
+    font-size: 48px;
     max-width: 900px;
-}
-.business-hero-title {
-    position: absolute;
-
-    width: 100%; /* Optional, depending on your content */
-    text-align: center;
-    color: white;
-    z-index: 999;
+  }
+  .intern-container {
+    display: revert;
+  }
 }
 
+@media (max-width: 768px) {
+  header.transparent.active {
+    background: #333333e4 !important;
+  }
 
-.about-title{
-    font-size: 2rem;
-}
+  header.transparent.sticky {
+    background: #fff !important;
+  }
 
-.business-table-data{
+  header.transparent nav {
+    background: #333333e4 !important;
+    top: 69px;
+  }
+
+  header.transparent.sticky nav {
+    background: #fff !important;
+    top: 59px;
+  }
+
+  header.transparent.non-sticky .burger-menu span {
+    background: #fff;
+  }
+  .business-hero > h1 {
+    font-size: 6vw;
+  }
+
+  .business-table {
     width: 100%;
-    display: flex;
-    gap: 2rem;
-    padding: 3rem 1rem;
-    border-bottom: 1px solid var(--text-color);
-}
-.business-table-data-heading{
-    align-self: center;
-    flex: 1;
-    font-weight: bolder;
-    color: black;
-}
-.business-table-data-body{
-    align-self: start;
-    flex:6;
-    color: black;
-
-}
-
-.intern-container{
-    display: flex;
-}
-
-@media (max-width: 1200px) {
-    .business-hero {
-        /*position: absolute;*/
-        width: 100%;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 20vh;
-    }
-    .business-hero > h1 {
-        font-size: 2rem;
-        max-width: 900px;
-    }
-    .intern-container{
-        display: revert;
-    }
+  }
+  .business-table-data {
+    padding: 15px;
+    gap: 10px;
+  }
 }

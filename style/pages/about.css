@@ -1,106 +1,137 @@
 .message {
-    background-image: url("../../assets/about-us/director.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    padding: 2rem;
+  background-image: url("../../assets/about-us/about_director.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 10% 0 10% 10%;
 }
 
 .message h2 {
-    color: var(--primary);
-    font-size: 1rem;
-    margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .message h3 {
-    font-size: 2rem;
-    color: var(--bg-color);
-    margin-bottom: 40px;
+  font-size: 32px;
+  color: var(--bg-color);
+  margin-bottom: 40px;
 }
 
 .message-content {
-    display: flex;
-    gap: 60px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .message-text {
-    max-width: 500px;
-    color: white;
+  max-width: 752px;
+  color: white;
 }
 
 .message-text p {
-    margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.message-text p:first-of-type {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 43.2px;
+  letter-spacing: 0.05em;
 }
 
 .signature {
-    text-align: right;
-    margin-top: 40px;
+  text-align: right;
+  margin-top: 40px;
 }
 
 .message-image {
-    flex: 1;
+  flex: 1;
 }
 
 .message-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .ceo-text-opacity-low {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .company-info {
-    padding: 80px 0;
-    display: flex;
-    flex-direction: column;
-    max-width: 1100px;
-    margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .company-info-item {
-    display: flex;
+  display: flex;
 }
 
 .company-info-item-heading {
-    flex: 1;
-    border-bottom: 1px solid black;
-    padding: 1rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+  flex: 1;
+  border-bottom: 1px solid black;
+  padding: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: #000;
 }
 
 .company-info-item-body {
-    flex: 3;
-    padding: 1rem;
-    border-bottom: 1px solid rgba(159, 156, 156, 0.45);
+  flex: 3;
+  padding: 16px;
+  border-bottom: 1px solid #BEBEBE;
+  color: #333;
+}
+
+.company-info-item-body ul li {
+    padding-bottom: 28.8px;
+}
+
+.company-info-item-body ul li:last-of-type {
+    padding-bottom: 0;
 }
 
 .table {
-    width: 100%;
+  width: 100%;
 }
 
 .info-row {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    padding: 30px 0;
-    border-bottom: 1px solid #e0e0e0;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .info-row dt {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .info-row ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .info-row li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .message {
+    padding: 15px;
+  }
+
+  .company-info {
+    padding: 0;
+  }
+
+  .footer-logo {
+    flex: 0 0 120px !important;
+  }
 }

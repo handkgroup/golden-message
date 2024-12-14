@@ -22,3 +22,56 @@
     }
   }
 }
+.school-staff,
+.schoolpropse-section {
+  margin-bottom: 0 !important;
+}
+
+.school-staff .container {
+  margin-bottom: 80px;
+}
+
+.schoolfeature-cards {
+  .card {
+    border-radius: 10px;
+  }
+  .card:first-of-type {
+    background: url("../assets/school/service_01.png") no-repeat center/cover !important;
+  }
+  .card:nth-of-type(2) {
+    background: url("../assets/school/service_02.png") no-repeat center/cover !important;
+    margin-top: 0;
+  }
+  .card:nth-of-type(3) {
+    background: url("../assets/school/service_03.png") no-repeat center/cover !important;
+    margin-top: 0;
+  }
+}
+
+.school-b {
+  font-weight: 700 !important;
+}
+
+.school-bottom-text {
+  font-family: Noto Sans JP;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .schoolfeature-cards {
+    .card {
+      width: 70% !important;
+      justify-content: end;
+      .content {
+        max-height: 400px !important;
+      }
+    }
+  }
+  .school-bottom-text p{
+    font-size: 24px !important;
+  }
+}

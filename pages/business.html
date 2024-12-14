@@ -10,195 +10,238 @@
   <title>Business Page</title>
 </head>
 
-<body class="responsive-container">
-  <header class="header">
+<body style="overflow-x: hidden;">
+  <header class="header transparent">
     <div class="nav-container responsive-container">
       <a href="/" class="nav-logo">
-        <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40" />
+        <img src="../assets/shared/logo-light.png" width="300px" alt="GoldenMessage Logo" width="40" height="40"
+          class="logo-light" />
+        <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40"
+          class="logo-dark" />
       </a>
-      <nav class="nav">
-        <a href="/service">サービス</a>
-        <a href="/about">About us</a>
-        <a href="/mission">ミッション・バリュー</a>
-        <a href="/company">お知らせ</a>
-        <a href="/recruit">採用情報</a>
-        <a href="/contact" class="btn-contact">お問い合わせ</a>
+      <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav" id="nav-menu">
+        <a href="./service.html">サービス</a>
+        <a href="./about.html">会社概要</a>
+        <a href="./gm-purpose.html">ミッション・バリュー</a>
+        <a href="./news.html">お知らせ</a>
+        <a href="./business.html">採用情報</a>
+        <a href="./contact.html" class="btn-contact">お問い合わせ</a>
       </nav>
     </div>
   </header>
-  <div class="business-hero">
+  <div class="business-hero main-fv">
     <img class="business-hero" src="../assets/business/business-hero.png" alt="" />
-    <h1 class="business-hero-title">
-      いま、自分にないものを。 まだ、答えのないことを。
+
+    <h1 class="business-hero-title animated-text">
+
+      <svg class="intro" viewbox="0 0 300 86">
+        <text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text1)">いま、自分にないものを。</text>
+        <text text-anchor="start" x="10" y="50" class="text text-stroke" clip-path="url(#text2)">まだ、答えのないことを。</text>
+        <text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2"
+          clip-path="url(#text1)">いま、自分にないものを。</text>
+        <text text-anchor="start" x="10" y="50" class="text text-stroke text-stroke-2"
+          clip-path="url(#text2)">まだ、答えのないことを。</text>
+        <defs>
+          <clipPath id="text1">
+            <text text-anchor="start" x="10" y="30" class="text">いま、自分にないものを。</text>
+          </clipPath>
+          <clipPath id="text2">
+            <text text-anchor="start" x="10" y="50" class="text">まだ、答えのないことを。</text>
+          </clipPath>
+          <clipPath id="text3">
+            <text text-anchor="start" x="10" y="70" class="text">Begin.</text>
+          </clipPath>
+        </defs </svg>
     </h1>
   </div>
-  <h2 class="golden-title mt-5 text-center">Golden Message について</h2>
-  <p style="
-        font-family:
-          Bradley Hand,
-          serif;
-      " class="mt-4 text-center about-title text-black mb-3">
-    About Us
-  </p>
+  <section class="animate-about">
+    <h2 class="golden-title mt-5 text-center mt-6">Golden Message について</h2>
+    <p style="
+          font-family:
+            Bradley Hand,
+            serif;
+        " class="mt-4 text-center about-title text-black mb-3">
+      About Us
+    </p>
 
-  <p class="text-center text-black">
-    いま社会で活躍している大人たちも、はじめは何者でもなかった。
-  </p>
-  <p class="text-center text-black">
-    誰もがふつうの若者で、同じように将来への不安を抱えていた。
-  </p>
-  <p class="text-center mb-3 text-black">
-    でも、まだ何者でもない状態って、最強じゃないですか。何者でもないからこそ、何にでもチャレンジできる。
-  </p>
-  <p class="text-center text-black">
-    答えがない道を進むのは不安だけども、道のりが見渡せたらたぶん、つまらない。
-  </p>
-  <p class="text-center mb-3 text-black">
-    規格外なことに挑戦し、新しい人と出会い、ぶつかり、励まし合い、答えを自らが導き出していく。
-  </p>
-  <p class="text-center text-black">
-    「迷ったら、自分にないものが見つかりそうな道へ」「悩んだら、答えがまだない道へ」を何者でもない自分へのルールにしてみるのはどうだろう。
-  </p>
+    <p class="text-center text-black px-4">
+      いま社会で活躍している大人たちも、はじめは何者でもなかった。
+    </p>
+    <p class="text-center text-black px-4">
+      誰もがふつうの若者で、同じように将来への不安を抱えていた。
+    </p>
+    <p class="text-center mb-3 text-black px-4">
+      でも、まだ何者でもない状態って、最強じゃないですか。何者でもないからこそ、何にでもチャレンジできる。
+    </p>
+    <p class="text-center text-black px-4">
+      答えがない道を進むのは不安だけども、道のりが見渡せたらたぶん、つまらない。
+    </p>
+    <p class="text-center mb-3 text-black px-4">
+      規格外なことに挑戦し、新しい人と出会い、ぶつかり、励まし合い、答えを自らが導き出していく。
+    </p>
+    <p class="text-center text-black px-4">
+      「迷ったら、自分にないものが見つかりそうな道へ」「悩んだら、答えがまだない道へ」を何者でもない自分へのルールにしてみるのはどうだろう。
+    </p>
+  </section>
 
-  <div class="mt-5 mb-3">
-    <img src="../assets/business/diagram.png" width="100%" alt="" />
-  </div>
-  <div class="flex justify-center mb-3">
-    <button class="btn-news">選考に応募する</button>
-  </div>
-  <h2 class="golden-title text-center">社内情報</h2>
-  <h2 style="
+  <section class="animate-numbers">
+    <div class="mt-5 mb-3">
+      <img src="../assets/business/diagram.png" width="100%" alt="" />
+    </div>
+    <div class="flex justify-center mb-3">
+      <button class="btn-news">選考に応募する</button>
+    </div>
+  </section>
+  <section class="animate">
+    <div class="grey-text-container">
+      <span class="recruit-grey-text">NUMBERS</span>
+      <h2 class="golden-title text-center">社内情報</h2>
+      <h2 style="
         font-family:
           Bradley Hand,
           serif;
         color: black;
       " class="text-center mb-3">
-    INFOGRAPHICS
-  </h2>
-  <img src="../assets/business/info.png" class="mb-3" width="100%" alt="" />
+        INFOGRAPHICS
+      </h2>
+    </div>
+    <div class="infographics-img">
+      <img src="../assets/business/info.png" class="mb-3" width="100%" alt="" />
+    </div>
+  </section>
 
-  <img src="../assets/business/recruitment.png" class="mb-3" width="100%" alt="" />
-  <div class="business-table mb-3">
-    <div class="business-table-data">
-      <div class="business-table-data-heading">募集職種</div>
-      <div class="business-table-data-body">
-        <p>総合職（営業職、人事職、カスタマーサポート職ほか）</p>
+  <section class="animate-requirements">
+
+    <img src="../assets/business/recruitment.png" class="mb-3" width="100%" alt="" />
+    <div class="business-table mb-3">
+      <div class="business-table-data">
+        <div class="business-table-data-heading">募集職種</div>
+        <div class="business-table-data-body">
+          <p>総合職（営業職、人事職、カスタマーサポート職ほか）</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">業務内容</div>
+        <div class="business-table-data-body">
+          <p>
+            ・学生コミュニティ事業の総合運営（主に集客・学生対応・企業開拓）
+          </p>
+          <p>・スクール事業の総合運営（主に集客・インサイドセールス）</p>
+          <p>
+            ・キャリアコーチング事業の総合運営（主に集客・コーチングの実施）
+          </p>
+          <p>・その他、各種インサイドセールス・フィールドセールス</p>
+          <p>・その他、営業コンサルティング・人事コンサルティング</p>
+          <p>・人事業務（主に新卒採用・中途採用および研修）</p>
+          <p>・新規事業、プロジェクトの立ち上げ</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">給与</div>
+        <div class="business-table-data-body">
+          <p>・新卒採用：初任給 月給30万円</p>
+          <p>・中途採用：月給30万円以上（経験、能力によって判断）</p>
+          <p>・いずれも固定残業代30時間分を含む</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">昇給・賞与</div>
+        <div class="business-table-data-body">
+          <p>・昇給：随時（最大年2回）</p>
+          <p>・賞与：決算賞与（6月末）</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">契約形態</div>
+        <div class="business-table-data-body">
+          <p>正社員（試用期間3ヵ月）</p>
+          <p>※試用期間中の待遇に差はありません</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">勤務地</div>
+        <div class="business-table-data-body">
+          <p>本社または都内各拠点、大阪</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">勤務時間</div>
+        <div class="business-table-data-body">
+          <p>9:00~18:00 （一部例外あり）</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">休日・休暇</div>
+        <div class="business-table-data-body">
+          <p>・完全週休2日制（原則、土日祝休み）</p>
+          <p>・年末年始休暇（5日間）</p>
+          <p>・慶弔休暇</p>
+          <p>・年次有給休暇</p>
+          <p>・産前産後休暇</p>
+          <p>・育児休暇</p>
+        </div>
+      </div>
+      <div class="business-table-data">
+        <div class="business-table-data-heading">待遇・福利厚生</div>
+        <div class="business-table-data-body">
+          <p>
+            ・社会保険完備（労働者災害補償保険、雇用保険、健康保険、厚生年金保険）
+          </p>
+          <p>・定期健康診断</p>
+          <p>・交通費全額支給</p>
+          <p>・ルームシェア型社宅</p>
+          <p>・各種研修制度</p>
+        </div>
       </div>
     </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">業務内容</div>
-      <div class="business-table-data-body">
-        <p>
-          ・学生コミュニティ事業の総合運営（主に集客・学生対応・企業開拓）
-        </p>
-        <p>・スクール事業の総合運営（主に集客・インサイドセールス）</p>
-        <p>
-          ・キャリアコーチング事業の総合運営（主に集客・コーチングの実施）
-        </p>
-        <p>・その他、各種インサイドセールス・フィールドセールス</p>
-        <p>・その他、営業コンサルティング・人事コンサルティング</p>
-        <p>・人事業務（主に新卒採用・中途採用および研修）</p>
-        <p>・新規事業、プロジェクトの立ち上げ</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">給与</div>
-      <div class="business-table-data-body">
-        <p>・新卒採用：初任給 月給30万円</p>
-        <p>・中途採用：月給30万円以上（経験、能力によって判断）</p>
-        <p>・いずれも固定残業代30時間分を含む</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">昇給・賞与</div>
-      <div class="business-table-data-body">
-        <p>・昇給：随時（最大年2回）</p>
-        <p>・賞与：決算賞与（6月末）</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">契約形態</div>
-      <div class="business-table-data-body">
-        <p>正社員（試用期間3ヵ月）</p>
-        <p>※試用期間中の待遇に差はありません</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">勤務地</div>
-      <div class="business-table-data-body">
-        <p>本社または都内各拠点、大阪</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">勤務時間</div>
-      <div class="business-table-data-body">
-        <p>9:00~18:00 （一部例外あり）</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">休日・休暇</div>
-      <div class="business-table-data-body">
-        <p>・完全週休2日制（原則、土日祝休み）</p>
-        <p>・年末年始休暇（5日間）</p>
-        <p>・慶弔休暇</p>
-        <p>・年次有給休暇</p>
-        <p>・産前産後休暇</p>
-        <p>・育児休暇</p>
-      </div>
-    </div>
-    <div class="business-table-data">
-      <div class="business-table-data-heading">待遇・福利厚生</div>
-      <div class="business-table-data-body">
-        <p>
-          ・社会保険完備（労働者災害補償保険、雇用保険、健康保険、厚生年金保険）
-        </p>
-        <p>・定期健康診断</p>
-        <p>・交通費全額支給</p>
-        <p>・ルームシェア型社宅</p>
-        <p>・各種研修制度</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="golden-title text-center">採用担当からのメッセージ</h2>
-  <h2 style="
+  </section>
+  <div class="message-container animate-message">
+    <h2 class="golden-title text-center">採用担当からのメッセージ</h2>
+    <h2 style="
         font-family:
           Bradley Hand,
           serif;
         color: black;
       " class="text-center mb-3 text-3xl">
-    MESSAGE
-  </h2>
-  <p class="font-light mb-3 text-black">Internship</p>
-  <h2 class="business-heading text-xl font-bold mb-3">
-    「圧倒的機会に自走を。」~
-    自分で未来を切り拓く、前例は倣うのではなく、創るもの。~
-  </h2>
+      MESSAGE
+    </h2>
+    <p class="font-light mb-3 text-black">Internship</p>
+    <h2 class="business-heading font-bold mb-3">
+      「圧倒的機会に自走を。」~
+      自分で未来を切り拓く、前 <br>例は倣うのではなく、創るもの。~
+    </h2>
 
-  <div class=" gap-5 intern-container">
-    <div class="flex-6">
-      <p class="mb-3 text-black">
-        新卒・中途を問わず、GoldenMessageが求めているのは「自分の能力や活躍フィールド制限せず、何にでも挑戦できる人」です。そして、もうひとつ重要なのは、その挑戦の中で掲げたゴールを達成するための具体的な努力を自発的にできる「自走する人」であることです。
-      </p>
-      <p class="mb-3 text-black">
-        高い能力と意欲を持ち、優れたパフォーマンスを発揮する仲間には、年齢に関係なくその才能を最大限に伸ばせるよう、会社としても後押しするカルチャーがあります。だって、現に大学3年生をCSO（最高戦略責任者）に任命しているわけですから（笑）
-      </p>
-      <p class="mb-3 text-black">
-        また、GoldenMessageはベンチャー企業の中でも、とことんベンチャー企業です。そこには、日常的に成長を実感できる瞬間が溢れていることは確かです。しかしながら、まだまだ社内ではあらゆる前例が少ないからこそ、自分その前例を創り社内の第一人者になるという気概も求められます。
-      </p>
-      <p class="mb-3 text-black">
-        前例がたくさんあるような、一流といわれる企業で安定を取るのも立派な選択ですが、ここまでお読みいただいたなら、180度逆の選択肢に心が躍るのではないでしょうか？
-      </p>
-      <p class="mb-3 text-black">
-        ビジネスアスリートとして、Goldenなキャリアにチャレンジしませんか？まずはカジュアル面談から。お気軽にご応募お待ちしております。
-      </p>
-    </div>
-    <div class="flex-2">
-      <img src="../assets/business/intern.png" width="100%" alt="" />
+    <div class=" gap-5 intern-container">
+      <div class="flex-6">
+        <p class="mb-3 text-black">
+          新卒・中途を問わず、GoldenMessageが求めているのは「自分の能力や活躍フィールド制限せず、何にでも挑戦できる人」です。そして、もうひとつ重要なのは、その挑戦の中で掲げたゴールを達成するための具体的な努力を自発的にできる「自走する人」であることです。
+        </p>
+        <p class="mb-3 text-black">
+          高い能力と意欲を持ち、優れたパフォーマンスを発揮する仲間には、年齢に関係なくその才能を最大限に伸ばせるよう、会社としても後押しするカルチャーがあります。だって、現に大学3年生をCSO（最高戦略責任者）に任命しているわけですから（笑）
+        </p>
+        <p class="mb-3 text-black">
+          また、GoldenMessageはベンチャー企業の中でも、とことんベンチャー企業です。そこには、日常的に成長を実感できる瞬間が溢れていることは確かです。しかしながら、まだまだ社内ではあらゆる前例が少ないからこそ、自分その前例を創り社内の第一人者になるという気概も求められます。
+        </p>
+        <p class="mb-3 text-black">
+          前例がたくさんあるような、一流といわれる企業で安定を取るのも立派な選択ですが、ここまでお読みいただいたなら、180度逆の選択肢に心が躍るのではないでしょうか？
+        </p>
+        <p class="mb-3 text-black">
+          ビジネスアスリートとして、Goldenなキャリアにチャレンジしませんか？まずはカジュアル面談から。お気軽にご応募お待ちしております。
+        </p>
+      </div>
+      <div class="flex-2">
+        <img src="../assets/business/message_01.png" width="100%" alt="" />
+      </div>
     </div>
   </div>
 
   <section class="cta">
-    <a href="/recruit" class="cta-item">
+    <a href="./newform.html" class="cta-item">
       <img class="footer-image-slider" src="../assets/business/footer3.png" alt="Recruit" width="800" height="600" />
       <div class="cta-content">
         <div>
@@ -208,7 +251,7 @@
         <div class="cta-arrow">→</div>
       </div>
     </a>
-    <a href="/contact" class="cta-item">
+    <a href="./midform.html" class="cta-item">
       <img class="footer-image-slider" alt="Contact" src="../assets/business/footer4.png" width="800" height="600" />
       <div class="cta-content">
         <div>
@@ -235,27 +278,49 @@
           </ul>
         </div>
         <div class="footer-nav-column">
-          <h3>会社概要</h3>
+          <h3>
+            <a href="./about.html">会社概要</a>
+          </h3>
           <ul>
-            <li><a href="#">ミッション・バリュー</a></li>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">採用情報</a></li>
+            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+            <li><a href="./news.html">お知らせ</a></li>
+            <li><a href="./business.html">採用情報</a></li>
           </ul>
         </div>
         <div class="footer-nav-column">
           <h3>その他</h3>
           <ul>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
             <li><a href="#">個人情報保護方針</a></li>
           </ul>
         </div>
       </nav>
     </div>
     <div class="footer-bottom">
-      <a href="#">プライバシーポリシー</a>
+      <a href="./policy.html">プライバシーポリシー</a>
       <span>© copyright 2024 Golden Messeage</span>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const introElement = document.querySelector('.intro');
+      const reloadButton = document.querySelector('.reload');
+
+      // Add 'go' class to the .intro element
+      introElement.classList.add('go');
+
+      // Add a click event listener to the .reload button
+      reloadButton.addEventListener('click', function () {
+        introElement.classList.remove('go');
+
+        setTimeout(function () {
+          introElement.classList.add('go');
+        }, 200);
+      });
+    });
+
+  </script>
 </body>
 
 </html>

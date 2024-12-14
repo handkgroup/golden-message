@@ -19,6 +19,7 @@
   --bg-gray: #f5f5f5;
   --bg-dark: #1a1a1a;
   --link-hover: #333;
+  --btn-bg-color: #d60000;
 }
 
 * {
@@ -31,8 +32,6 @@ a {
   color: var(--link-hover);
   text-decoration: none;
 }
-
-
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -49,45 +48,93 @@ body {
 }
 
 .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .loader figure {
-    width: 80%;
-    max-width: 1000px;
+  width: 80%;
+  max-width: 1000px;
 }
 
 .loader svg {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .letter {
-    fill: #fff;
-    transform-origin: center;
-    will-change: transform, opacity;
+  fill: #fff;
+  transform-origin: center;
+  will-change: transform, opacity;
 }
 
 /* Optional: Add glow effect to the letters */
 .letter {
-    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.7));
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.7));
 }
 
 /* Optional: Add hover effect */
 .text-group:hover .letter {
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
-    transition: filter 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
+  transition: filter 0.3s ease;
 }
 
+.news,
+.about-section,
+.service-section,
+.special-section,
+.animate-about,
+.animate-numbers,
+.animate-requirements,
+.animate-message,
+.service,
+.service-section,
+.propose-section,
+.flow-section,
+.case-study-section,
+.mission-animate,
+.vision-animate,
+.purpose-value,
+.tab-container,
+.service-menu-section,
+.commitment-section,
+.mission-section,
+.main__grid {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-
-
+/* Optional: Add will-change to optimize performance */
+.main-fv,
+.news,
+.about-section,
+.service-section,
+.special-section,
+.animate-about,
+.animate-numbers,
+.animate-requirements,
+.animate-message,
+.service,
+.service-section,
+.propose-section,
+.flow-section,
+.case-study-section,
+.mission-animate,
+.vision-animate,
+.purpose-value,
+.tab-container,
+.service-menu-section,
+.commitment-section,
+.mission-section,
+.main__grid {
+  will-change: opacity, transform;
+}

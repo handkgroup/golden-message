@@ -9,30 +9,38 @@
     <link rel="stylesheet" href="./style/pages/top.css">
 </head>
 
-<body class="responsive-container">
+<body>
     <div class="loader">
-    <p>
-        <span class="typing typing-1">Let's stop dreaming. We will overcome.</span><br>
-        <span class="typing typing-2">Shohei Ohtani 🥎</span>
-    </p>
-    <img src="./assets/img/logo-dark.png" alt="" class="loader-logo">
-</div>
+        <p>
+            <span class="typing typing-1">Let's stop dreaming. We will overcome.</span><br>
+            <span class="typing typing-2">Shohei Ohtani 🥎</span>
+        </p>
+        <img src="./assets/img/logo-dark.png" alt="" class="loader-logo">
+    </div>
 
-    <header class="header">
-        <div class="nav-container responsive-container">
-          <a href="/" class="nav-logo">
-            <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40" />
-          </a>
-          <nav class="nav">
-            <a href="/service">サービス</a>
-            <a href="/about">About us</a>
-            <a href="/mission">ミッション・バリュー</a>
-            <a href="/company">お知らせ</a>
-            <a href="/recruit">採用情報</a>
-            <a href="/contact" class="btn-contact">お問い合わせ</a>
-          </nav>
+    <header class="header transparent">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="../assets/shared/logo-light.png" width="300px" alt="GoldenMessage Logo" width="40" height="40"
+                    class="logo-light" />
+                <img src="../assets/shared/logo.png" width="300px" alt="GoldenMessage Logo" width="40" height="40"
+                    class="logo-dark" />
+            </a>
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <a href="./pages/service.html">サービス</a>
+                <a href="./pages/about.html">About us</a>
+                <a href="./pages/gm-purpose.html">ミッション・バリュー</a>
+                <a href="./pages/news.html">お知らせ</a>
+                <a href="./pages/business.html">採用情報</a>
+                <a href="./pages/contact.html" class="btn-contact">お問い合わせ</a>
+            </nav>
         </div>
-      </header>
+    </header>
     <main>
         <div class="main-fv-wrapper">
             <section class="main-fv">
@@ -70,22 +78,18 @@
             <a href="#" class="dark-btn">お知らせをみる</a>
         </section>
         <section class="about-section">
-            <div class="about-left">
-                <div class="about-title">
-                    <span>“</span>
-                    <div class="about-title-inner">
-                        <img src="./assets/img/about_title.png" alt="">
-                        <h2>にスパイスを</h2>
-                    </div>
+            <h2><img src="./assets/img/about_title.png" alt="">との掛け算で、明日の幸せをつくる</h2>
+            <div class="about-section-inner">
+                <div class="about-left">
+                    <p class="about-text">
+                        誰もが自由にキャリアを選択できるこの時代。<br> 1ヵ所で複数社のインターンを体験することができ、新たなコミュニティ形成も可能。<br>
+                        あなたが理想とする未来を実現できるように、限られた時間の中でタイムパフォーマンス良く、圧倒的な成長ができる”バーチャルインターンシップSOBANIRU”。
+                    </p>
+                    <a href="#">私たちについて</a>
                 </div>
-                <p class="about-text">
-                    誰もが自由にキャリアを選択できるこの時代。<br> 1ヵ所で複数社のインターンを体験することができ、新たなコミュニティ形成も可能。<br>
-                    あなたが理想とする未来を実現できるように、限られた時間の中でタイムパフォーマンス良く、圧倒的な成長ができる”バーチャルインターンシップSOBANIRU”。
-                </p>
-                <a href="#">私たちについて</a>
-            </div>
-            <div class="about-right">
-                <img src="./assets/img/about.png" alt="">
+                <div class="about-right">
+                    <img src="./assets/img/about.png" alt="">
+                </div>
             </div>
         </section>
         <section class="service-section">
@@ -135,55 +139,68 @@
                 </a>
             </div>
         </section>
-        <section class="info-section">
-            <a href="#" class="info-inner recriut">
-                <div class="info-left">
-                    <h2>recriut</h2>
-                    <p>採用情報</p>
-                </div>
-                <div class="info-right">
-                    <img src="./assets/img/arrow.png" alt="">
+        <section class="cta">
+            <a href="./business.html" class="cta-item">
+                <img class="footer-image-slider" src="../assets/shared/footer1.png" alt="Recruit" width="800"
+                    height="600" />
+                <div class="cta-content">
+                    <div>
+                        <h2>Recruit</h2>
+                        <p>採用情報</p>
+                    </div>
+                    <div class="cta-arrow">→</div>
                 </div>
             </a>
-            <a href="#" class="info-inner contact">
-                <div class="info-left">
-                    <h2>Contact</h2>
-                    <p>問い合わせ</p>
-                </div>
-                <div class="info-right">
-                    <img src="./assets/img/arrow.png" alt="">
+            <a href="./contact.html" class="cta-item">
+                <img class="footer-image-slider" src="../assets/shared/foooter2.png" alt="Contact" width="800"
+                    height="600" />
+                <div class="cta-content">
+                    <div>
+                        <h2>Contact</h2>
+                        <p>問い合わせ</p>
+                    </div>
+                    <div class="cta-arrow">→</div>
                 </div>
             </a>
         </section>
     </main>
-    <footer>
-        <div class="footer-top">
-            <div class="logo">
-                <img src="./assets/img/footer_logo.png" alt="">
-            </div>
-            <div class="footer-menu">
-                <ul>
-                    <li><a href="#">サービス</a></li>
-                    <li><a href="#">サービス1</a></li>
-                    <li><a href="#">サービス2</a></li>
-                    <li><a href="#">サービス3</a></li>
-                    <li><a href="#">サービス4</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">会社概要</a></li>
-                    <li><a href="#">ミッション・バリュー</a></li>
-                    <li><a href="#">お知らせ</a></li>
-                    <li><a href="#">採用情報</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">お問い合わせ</a></li>
-                    <li><a href="#">個人情報保護方針</a></li>
-                </ul>
-            </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="" class="footer-logo">
+                <img src="../assets/shared/signature.png" alt="Golden Message">
+            </a>
+            <nav class="footer-nav">
+                <div class="footer-nav-column">
+                    <h3>サービス</h3>
+                    <ul>
+                        <li><a href="#">サービス1</a></li>
+                        <li><a href="#">サービス2</a></li>
+                        <li><a href="#">サービス3</a></li>
+                        <li><a href="#">サービス4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>
+                        <a href="./about.html">会社概要</a>
+                    </h3>
+                    <ul>
+                        <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+                        <li><a href="./news.html">お知らせ</a></li>
+                        <li><a href="./business.html">採用情報</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h3>その他</h3>
+                    <ul>
+                        <li><a href="./contact.html">お問い合わせ</a></li>
+                        <li><a href="#">個人情報保護方針</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
         <div class="footer-bottom">
-            <p>プライバシーポリシー</p>
-            <p>© copyright 2024 Golden Messeage</p>
+            <a href="./policy.html">プライバシーポリシー</a>
+            <span>© copyright 2024 Golden Messeage</span>
         </div>
     </footer>
     <script src="./js/script.js"></script>

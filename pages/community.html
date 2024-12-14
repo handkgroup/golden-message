@@ -14,18 +14,21 @@
   <header class="header-nav">
     <div class="header-nav_container">
       <img src="../assets/img/logo.png" alt="logo" />
-      <div class="nav_wrapper">
-        <nav class="nav">
+      <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+        <nav class="nav" id="nav-menu">
           <ul>
-            <li>サービス</li>
-            <li>会社概要</li>
-            <li>ミッション</li>
-            <li>お知らせ</li>
-            <li>採用情報</li>
+            <li><a class="list__link" href="./service.html">サービス</a></li>
+            <li><a class="list__link" href="./about.html">会社概要</a></li>
+            <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+            <li><a class="list__link" href="./news.html">お知らせ</a></li>
+            <li><a class="list__link" href="./business.html">採用情報</a></li>
+            <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
           </ul>
         </nav>
-        <button>お問い合わせ</button>
-      </div>
     </div>
   </header>
 
@@ -66,7 +69,41 @@
     <div class="container">
       <p class="feature_text">FEATURE</p>
       <h2 class="feature_title">UNI MEETを企業様にオススメする理由</h2>
-      <div class="cards"></div>
+      <div class="cards community-feature-cards">
+        <div class="card">
+          <span>01</span>
+          <img src="../assets/community/feature_01.png" alt="">
+          <div class="card-inner">
+            <h3>学生の利用頻度の多さ</h3>
+            <p>
+              UNI
+              MEETのコンセプトは「学生生活を充実させる相棒のような存在になる」です。学生は単に就活のために利用するのではなく、大学生活やキャリアにおける様々な情報収集や、学生同士の繋がりを広げるためなど、多種多様な目的で、プラットフォームを利用しています。従って、一般的な就活サイトに比べ、圧倒的な利用頻度の多さ・利用時間の長さであることから、高いアクティブ率を維持できています。そのことから、企業様の採用においても、応募率やメッセージの返信率の高さにご好評いただいています。
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <span>02</span>
+          <img src="../assets/community/feature_02.png" alt="">
+          <div class="card-inner">
+            <h3>全国、全学年が利用</h3>
+            <p>
+              UNI
+              MEETは、就活の本格スタートに合わせて利用を開始するサービスではありません。学生であれば誰でも利用できるのが特徴です。従って、大学1年生～4年生まで、幅広くご利用いただいています。企業様においても、目的に合わせて、長期インターンシップへの集客、採用の母集団形成など、あらゆる用途でご利用いただけます。
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <span>03</span>
+          <img src="../assets/community/feature_03.png" alt="">
+          <div class="card-inner">
+            <h3>仕事意欲の高い学生</h3>
+            <p>
+              UNI
+              MEETは、サービスコンセプトに共感を得た学生が多いことから、「成長したい」「人脈を広げたい」「社会について学びたい」といった、将来のキャリアに対する視座や、仕事への意欲が高い人材が多く集まっています。そのため、どうせ費用をかけるなら、良い人材・活躍が期待できる人材を採用したい！という企業様のご要望にお応えできます。
+            </p>
+          </div>
+        </div>
+      </div>
       <button class="black_btn">UNI MEETサイトへ</button>
     </div>
   </section>
@@ -82,23 +119,17 @@
           <div class="content">
             <b>Internship</b>
             <h3 class="underlined">
-              開発チームは「現役の慶応生！」 ※2025年時点、大学3年生
+              開発チームは「現役の慶応生！」<br> ※2025年時点、大学3年生
             </h3>
-            <p>
-              GoldenMessage株式会社 <br />
+            <p class="community-info-text">GoldenMessage株式会社 <br />
               CSO 最高戦略責任者<br />
               蒲谷　建人　Taketo Butani <br />
-              慶応義塾大学　商学部　（2025年時点）
-              <br /><br />
+              慶応義塾大学　商学部　（2025年時点）</p>
+            <p class="community-info-text">
+              <br />
               "慶応義塾大学入学後、WEBアプリケーション系のベンチャー企業にエンジニアとして参画し、サイト制作の実務からディレクターまでを経験。約1年でCTOに就任。技術開発部門の責任者としてマネジメントに従事。その後、コンサル会社のインターンシップに参加し、営業~コンサルまで幅広く経験。2024年、弊社CSOに就任。UNI
               MEETの開発責任者を務める。 "
             </p>
-
-            <div class="link-button">
-              <a href="#">
-                <button>お問い合わせする</button>
-              </a>
-            </div>
           </div>
           <div class="picture">
             <img src="../assets/img/user.jpg" alt="user" />
@@ -112,11 +143,11 @@
   <!-- Misson section start -->
   <section class="mission-section">
     <div class="container">
-      <b class="section-title">MISSION</b>
-      <h2 class="underlined">UNI MEETに込めた想い</h2>
       <h3>「大学生活の相棒」として最も選ばれるサービスへ</h3>
       <p>
-        GoldenMessageでは、動画編集スクールをはじめ、小中学生向けの個別指導塾、高校生向けのコーチング型個別指導塾、営業マン養成スクールなど、様々なスクールサービスを展開しています。ゴール設定を明確にし、プロセスを徹底伴走して成し遂げる確かな運営ノウハウにより、累計2,800名（2025年時点）にご利用いただいています。これからも信頼と実績を積み重ね、従来の概念を超えたスクール事業を展開いたします。
+        私がUNI
+        MEETの開発に着手したのは、同じ慶応生からの「就活ムズくない？」という一言からでした。せっかくそれなりの大学に入ったのに「ムズい」とはどういうことか。それは、内定を取る難しさではなく、将来設計（キャリア選択）の難しさでした。確かに、就職活動のチャネルは年々多様化しており、学生と企業のいずれにとっても、チャネルの取捨選択に対する難しさやストレスは以前にも増していると感じます。また、学生にとっては穏やかな1～2年生を経て、「急に3年生のある時に、就活というイベントがやってくる」という感覚が強く、将来設計をわずか1年足らずの期間に駆け足で行わなくてはならないという状況を課題視しています。ですから、そんな課題を解決すべく、大学1年生の段階から、将来に向けた学びと成長を実現することができ、その延長線に就職やキャリア選択をシームレスに繋げることができるサービスを作れないかと考え、UNI
+        MEETをリリースしました。今後は、就活のために利用いただくことはもちろん、「大学生活の相棒」として最も学生に選ばれるサービスを目指していきます。
       </p>
     </div>
   </section>
@@ -131,7 +162,7 @@
         キャリアのモヤモヤをコーチングを通じて可能性に変えませんか？
         個人の方も企業のご担当者様もまずはお問い合わせください。
       </p>
-      <button>お問い合わせする</button>
+      <a href="./contact.html"><button>お問い合わせする</button></a>
     </div>
   </section>
 
@@ -151,17 +182,16 @@
             <li>サービス3</li>
             <li>サービス4</li>
           </ul>
-
           <ul>
-            <li>会社概要</li>
-            <li>ミッション・バリュー</li>
-            <li>お知らせ</li>
-            <li>採用情報</li>
+            <li><a href="./about.html"><a href="./about.html">会社概要</a></a></li>
+            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+            <li><a href="./news.html">お知らせ</a></li>
+            <li><a href="./business.html">採用情報</a></li>
           </ul>
 
           <ul>
-            <li>お問い合わせ</li>
-            <li>個人情報保護方針</li>
+            <li><a href="./contact.html">お問い合わせ</a></li>
+            <li><a href="#">個人情報保護方針</a></li>
           </ul>
         </div>
       </div>
@@ -173,6 +203,7 @@
   </footer>
   <!-- Footer end -->
   <script src="./js/index.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

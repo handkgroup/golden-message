@@ -4,74 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/contact-form.css">
+    <link rel="stylesheet" href="../style/404.css">
     <title>Page not found</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav__bar">
-            <a href="/" class="logo">
-                <img src="../assets/img/logo-dark.png" alt="GoldenMessage">
-            </a>
-            <input type="checkbox" id="menu">
-            <label for="menu" class="menu">⇶</label>
-            <ul class="nav__list">
-                <label for="menu" class="menu times">X</label>
-                <li><a class="list__link" href="/service">サービス</a></li>
-                <li><a class="list__link" href="/about">会社概要</a></li>
-                <li><a class="list__link" href="/mission">ミッション</a></li>
-                <li><a class="list__link" href="/news">お知らせ</a></li>
-                <li><a class="list__link" href="/recruit">採用情報</a></li>
-                <li><a class="list__link contact-btn" href="/contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
-        <div class="header__info">
-            <h1 class="header__title">
-                Page not found.
-            </h1>
-            <p class="header__text">3営業日以内に、担当者より折り返しさせていただきます。</p>
-            <a href="#!" class="header__btn">トップに戻る</a>
-        </div>
-    </header>
-    <footer class="footer">
-        <div class="footer-container">
-            <a href="" class="footer-logo">
-                <img src="../assets/img/footer_logo.png" alt="Golden Message">
-            </a>
-            <nav class="footer-nav">
-                <div class="footer-nav-column">
-                    <h3>サービス</h3>
-                    <ul>
-                        <li><a href="#">サービス1</a></li>
-                        <li><a href="#">サービス2</a></li>
-                        <li><a href="#">サービス3</a></li>
-                        <li><a href="#">サービス4</a></li>
-                    </ul>
+    <div class="page-wrapper">
+        <header class="header">
+            <nav class="nav__bar">
+                <a href="/" class="logo">
+                    <img src="../assets/img/logo-dark.png" alt="GoldenMessage">
+                </a>
+                <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="footer-nav-column">
-                    <h3>会社概要</h3>
-                    <ul>
-                        <li><a href="#">ミッション・バリュー</a></li>
-                        <li><a href="#">お知らせ</a></li>
-                        <li><a href="#">採用情報</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav-column">
-                    <h3>その他</h3>
-                    <ul>
-                        <li><a href="#">お問い合わせ</a></li>
-                        <li><a href="#">個人情報保護方針</a></li>
-                    </ul>
-                </div>
+                <ul class="nav__list" id="nav-menu">
+                    <li><a class="list__link" href="./service.html">サービス</a></li>
+                    <li><a class="list__link" href="./about.html">会社概要</a></li>
+                    <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+                    <li><a class="list__link" href="./news.html">お知らせ</a></li>
+                    <li><a class="list__link" href="./business.html">採用情報</a></li>
+                    <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
+                </ul>
+                
             </nav>
-        </div>
-        <div class="footer-bottom">
-            <a href="#">プライバシーポリシー</a>
-            <span>© copyright 2024 Golden Messeage</span>
-        </div>
-    </footer>
+        </header>
+        <main>
+            <div class="header__info">
+                <h1 class="header__title">
+                    Page not found.
+                </h1>
+                <p class="header__text">
+                    お探しのページは見つかりませんでした。アクセスしようとしたページは削除されたかURLが変更されているため表示できません。<br>お手数ですが、再度トップページからお探しください。</p>
+                <a href="../index.html" class="header__btn">トップに戻る</a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <a href="" class="footer-logo">
+                    <img src="../assets/img/footer_logo.png" alt="Golden Message">
+                </a>
+                <nav class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h3>サービス</h3>
+                        <ul>
+                            <li><a href="#">サービス1</a></li>
+                            <li><a href="#">サービス2</a></li>
+                            <li><a href="#">サービス3</a></li>
+                            <li><a href="#">サービス4</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3>
+                            <a href="./about.html">会社概要</a>
+                        </h3>
+                        <ul>
+                            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+                            <li><a href="./news.html">お知らせ</a></li>
+                            <li><a href="./business.html">採用情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h3>その他</h3>
+                        <ul>
+                            <li><a href="./contact.html">お問い合わせ</a></li>
+                            <li><a href="#">個人情報保護方針</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <a href="./policy.html">プライバシーポリシー</a>
+                <span>© copyright 2024 Golden Messeage</span>
+            </div>
+        </footer>
+    </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navMenu = document.getElementById('nav-menu');
+            const header = document.querySelector('.header');
+
+            burgerMenu.addEventListener('click', () => {
+                // Toggle active classes
+                burgerMenu.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                header.classList.toggle('menu-active'); // Optional for background change
+            });
+
+            // Optional: Close menu on link click
+            navMenu.addEventListener('click', (event) => {
+                if (event.target.tagName === 'A') {
+                    burgerMenu.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    header.classList.remove('menu-active');
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>

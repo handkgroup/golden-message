@@ -9,12 +9,12 @@
 
 
 .news-heading {
-    font-size: 3.5rem;
+    font-size: 56px;
     color: black !important;
 }
 
 .business-heading {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: black !important;
 }
 .business-heading:after {
@@ -33,8 +33,12 @@
     background-color: #DCA840;
 }
 
+.news-details-fv {
+    padding-left: 5%;
+}
+
 .news-details-image{
-    width: 85% !important;
+    width: 50% !important;
     margin:  auto;
 }
 .news-subheading-underline:after {
@@ -46,14 +50,27 @@
     background-color: black;
 }
 
+.news-details-content {
+    padding: 0 4.5%;
+}
+
 
 .news-body-text{
-    margin-top: 3rem;
+    margin: 48px 0 56px;
 }
 
 .news-subheading-left-border {
     border-left: 3px solid black;
-    padding-left: 1rem;
+    padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+    .news-heading {
+        font-size: 42px;
+    }
+    .news-details-image {
+        width: 90% !important;
+    }
 }
 
 

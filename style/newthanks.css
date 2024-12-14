@@ -42,7 +42,7 @@ body {
 .nav__list {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 32px;
     align-items: center;
 }
 
@@ -54,7 +54,7 @@ body {
 .contact-btn {
     background-color: #333;
     color: white !important;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     border-radius: 4px;
 }
 

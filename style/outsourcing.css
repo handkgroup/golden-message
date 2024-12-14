@@ -84,3 +84,40 @@
     }
   }
 }
+
+.outsourcingfeature-section {
+  margin-bottom: 0;
+}
+
+.outsourcing-cards {
+  gap: 0;
+  .card .content p b {
+    font-weight: 700 !important;
+  }
+  .card:nth-of-type(2) {
+    margin-top: 0;
+  }
+  .card:nth-of-type(3) {
+    margin-top: 0;
+  }
+}
+
+#service-menu-cards {
+  .cards {
+    justify-content: start !important;
+  }
+  .card:nth-of-type(2) {
+    margin-top: 0;
+  }
+  .card:nth-of-type(3) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .service-menu-section .card {
+    flex-direction: row !important;
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}

@@ -39,6 +39,10 @@
     margin-bottom: 15px;
 }
 
+.footer-nav-column h3 a {
+    color: #fff !important;
+}
+
 .footer-nav-column ul {
     list-style: none;
 }
@@ -90,6 +94,7 @@
     .footer-nav {
         justify-content: space-around;
         gap: 20px;
+        margin-left: 0;
     }
 
     .footer-nav-column {
