@@ -14,8 +14,13 @@ body {
 /* universal container */
 .container {
   max-width: 1130px;
-  padding: 50px 10px;
+  padding: 0 10px 0;
   margin: 0 auto;
+}
+
+.hero_container {
+  max-width: unset !important;
+  padding: 70px 10px 50px 10%;
 }
 
 .section-title {
@@ -306,6 +311,25 @@ body {
       width: 316px;
       cursor: pointer;
     }
+    button:hover {
+      background-position: right center;
+      background-size: 200% auto;
+      -webkit-animation: pulse 2s infinite;
+      animation: ripple-white 1.5s infinite;
+      color: #333;
+    }
+  }
+}
+
+@keyframes ripple-white {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(214, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(214, 0, 0, 0);
   }
 }
 /* contact section style end */

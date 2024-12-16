@@ -144,6 +144,9 @@
 .mb-4 {
   margin-bottom: 40px;
 }
+.mb-5 {
+  margin-bottom: 20px;
+}
 .ml-1 {
   margin-left: 4px;
 }
@@ -173,8 +176,14 @@
 .pt-1 {
   padding-top: 4px;
 }
+.pt-2 {
+  padding-top: 40px;
+}
 .pb-1 {
   padding-bottom: 4px;
+}
+.pb-2 {
+  padding-bottom: 40px;
 }
 .pl-1 {
   padding-left: 4px;
@@ -316,6 +325,6 @@
     margin-top: 32px;
   }
   .left-text {
-    margin: 20px;
+    margin: -5%;
   }
 }

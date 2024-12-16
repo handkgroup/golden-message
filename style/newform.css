@@ -17,6 +17,10 @@ body {
   font-family: "Noto Sans JP";
 }
 
+a {
+  text-decoration: none;
+}
+
 .header-container {
   padding: 16px 24px;
   margin: 0 auto;
@@ -41,8 +45,7 @@ body {
 .contact-btn {
   background-color: var(--btn-bg-color);
   color: white !important;
-  padding: 10.5px 32px;
-  border-radius: 4px;
+  padding: 20.5px 32px;
 }
 
 .contact-btn:hover {
@@ -85,7 +88,7 @@ body {
 }
 
 .contact-header div {
-  padding-left: 100px;
+  padding-left: 10%;
 }
 
 .bg-text {
@@ -101,24 +104,24 @@ body {
 }
 
 .contact-title {
-  font-size: 56px;
+  font-size: 108px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .contact-subtitle {
-  font-size: 19.2px;
+  font-size: 24px;
 }
 
 .container {
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 40px 60px;
   border: 2px solid rgba(128, 128, 128, 0.276);
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: 35% 60%;
   gap: 35px;

@@ -8,9 +8,14 @@
   text-decoration-color: #dca840;
 }
 
+.golden-title {
+  color: #dca840;
+  font-family: "Montserrat", serif;
+  font-size: 24px;
+}
 
-.golden-title{
-    color: #DCA840;
-    font-family: "Montserrat", serif;
-    font-size: 24px;
+.value-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 50.4px;
 }

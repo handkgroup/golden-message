@@ -472,6 +472,30 @@ header.sticky .logo-dark {
   transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
+.news .dark-btn {
+  background: #d60000;
+}
+
+.news .dark-btn:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: ripple 1.5s infinite;
+  color: #fff;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 #d60000;
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(214, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(214, 0, 0, 0);
+  }
+}
+
 @media (max-width: 1024px) {
   .news-wrapper {
     padding: 40px 50px;
@@ -499,7 +523,7 @@ header.sticky .logo-dark {
 
 .about-section {
   background: url("../../assets/img/about_bg.png") no-repeat;
-  padding: 72px 0 40px;
+  padding: 72px 200px 40px;
 }
 
 .about-section h2 {
@@ -539,6 +563,26 @@ header.sticky .logo-dark {
   font-size: 16px;
   font-weight: 700;
   line-height: 28.8px;
+}
+
+.about-left a:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: ripple-dark 1.5s infinite;
+  color: #fff;
+}
+
+@keyframes ripple-dark {
+  0% {
+    box-shadow: 0 0 0 0 #333;
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(214, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(214, 0, 0, 0);
+  }
 }
 
 .about-section-inner img {
@@ -637,8 +681,7 @@ header.sticky .logo-dark {
   background: linear-gradient(to right, #d1d1d1, #333333);
 }
 
-.service-card-bg {
-  background: url("../../assets/img/service.png") no-repeat center / cover;
+ .service-card-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -646,6 +689,22 @@ header.sticky .logo-dark {
   height: 80%;
   border-radius: 10px 10px 0 0;
   z-index: 1;
+}
+
+.service-card:first-of-type .service-card-bg {
+  background: url("../../assets/img/service_01.png") no-repeat center / cover;
+}
+
+.service-card:nth-of-type(2) .service-card-bg {
+  background: url("../../assets/img/service_02.png") no-repeat center / cover;
+}
+
+.service-card:nth-of-type(3) .service-card-bg {
+  background: url("../../assets/img/service_03.png") no-repeat center / cover;
+}
+
+.service-card:nth-of-type(4) .service-card-bg {
+  background: url("../../assets/img/service_04.png") no-repeat center / cover;
 }
 
 .service-card-content {

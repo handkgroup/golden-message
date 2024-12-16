@@ -1,9 +1,5 @@
 @import url("./reset.css");
 
-
-
-
-
 .service-section {
   margin-bottom: 80px;
 
@@ -57,7 +53,7 @@
           transform: translateY(-20px);
         }
 
-        &:hover>.content {
+        &:hover > .content {
           max-height: 400px;
         }
 
@@ -99,14 +95,17 @@
     border-radius: 10px;
   }
   .card:first-of-type {
-    background: url("../assets/consulting/propose_01.png") no-repeat center/cover !important;
+    background: url("../assets/consulting/propose_01.png") no-repeat
+      center/cover !important;
   }
   .card:nth-of-type(2) {
-    background: url("../assets/consulting/propose_02.png") no-repeat center/cover !important;
+    background: url("../assets/consulting/propose_02.png") no-repeat
+      center/cover !important;
     margin-top: 0;
   }
   .card:nth-of-type(3) {
-    background: url("../assets/consulting/propose_03.png") no-repeat center/cover !important;
+    background: url("../assets/consulting/propose_03.png") no-repeat
+      center/cover !important;
     margin-top: 0;
   }
 }
@@ -197,7 +196,6 @@
 
     .step:nth-child(2) {
       .container {
-
         /* display: flex;
         justify-content: end; */
         /* width: 100%; */
@@ -221,7 +219,6 @@
 .link-button {
   margin-bottom: 100px;
   text-align: center;
-
   button {
     border: 1px solid var(--Gold, #dca840);
     background: #d60000;
@@ -235,10 +232,11 @@
     max-width: 548px;
     width: 100%;
     padding: 12px 0;
+    cursor: pointer;
   }
 }
 
-.link-button:hover button{
+.link-button:hover button {
   background-position: right center;
   background-size: 200% auto;
   -webkit-animation: pulse 2s infinite;
@@ -258,8 +256,28 @@
   }
 }
 
+.step-btn:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: ripple2 1.5s infinite;
+  color: #fff;
+}
+
+@keyframes ripple2 {
+  0% {
+    box-shadow: 0 0 0 0 #d60000;
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(214, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(214, 0, 0, 0);
+  }
+}
+
 .feature-section {
-  margin-bottom: 140px;
+  margin-bottom: 98px;
 
   .container {
     h2 {
@@ -480,7 +498,6 @@
   display: none;
 }
 
-
 .card__carousel {
   display: flex !important;
   flex-wrap: nowrap !important;
@@ -496,8 +513,7 @@
   display: none;
 }
 
-
-@media (max-width: 1024px ) {
+@media (max-width: 1024px) {
   .consulting-feature {
     .cards {
       align-items: center;
@@ -528,17 +544,17 @@
   }
   .flow-section {
     & .steps {
-        .step:nth-of-type(2) {
-          transform: translateY(-350px);
-          div {
-            padding-top: 90px;
-          }
+      .step:nth-of-type(2) {
+        transform: translateY(-350px);
+        div {
+          padding-top: 90px;
         }
-        .step:nth-of-type(3) {
-          div {
-            margin-top: -40px;
-          }
+      }
+      .step:nth-of-type(3) {
+        div {
+          margin-top: -40px;
         }
       }
     }
   }
+}

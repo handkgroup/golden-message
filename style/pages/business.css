@@ -86,12 +86,12 @@ header.transparent.non-sticky {
 }
 
 .about-title {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .business-table {
   width: 80%;
-  margin: 0 auto 52px;
+  margin: 0 auto 130px;
 }
 
 .business-table-data {
@@ -115,7 +115,7 @@ header.transparent.non-sticky {
 
 .message-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 105px;
 }
 
 .business-heading {
@@ -137,7 +137,7 @@ header.transparent.non-sticky {
 
 .recruit-grey-text {
   font-family: Noto Sans JP, sans-serif;
-  font-size: 12.5vw;
+  font-size: 200px;
   font-weight: 700;
   line-height: 240px;
   letter-spacing: 0.16em;
@@ -170,6 +170,9 @@ header.transparent.non-sticky {
   }
   .intern-container {
     display: revert;
+  }
+  .recruit-grey-text {
+    font-size: 150px;
   }
 }
 
@@ -205,5 +208,24 @@ header.transparent.non-sticky {
   .business-table-data {
     padding: 15px;
     gap: 10px;
+  }
+  .grey-text-container {
+    .recruit-grey-text {
+      font-size: 90px;
+    }
+    h2:first-of-type {
+      font-size: 16px !important;
+    }
+    h2:last-of-type {
+      font-size: 20px !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .grey-text-container {
+    .recruit-grey-text {
+      font-size: 60px;
+    }
   }
 }
