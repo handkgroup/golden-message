@@ -19,16 +19,16 @@
         <span></span>
         <span></span>
       </div>
-        <nav class="nav" id="nav-menu">
-          <ul>
-            <li><a class="list__link" href="./service.html">サービス</a></li>
-            <li><a class="list__link" href="./about.html">会社概要</a></li>
-            <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
-            <li><a class="list__link" href="./news.html">お知らせ</a></li>
-            <li><a class="list__link" href="./business.html">採用情報</a></li>
-            <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
-          </ul>
-        </nav>
+      <nav class="nav" id="nav-menu">
+        <ul>
+          <li><a class="list__link" href="./service.html">サービス</a></li>
+          <li><a class="list__link" href="./about.html">会社概要</a></li>
+          <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+          <li><a class="list__link" href="./news.html">お知らせ</a></li>
+          <li><a class="list__link" href="./business.html">採用情報</a></li>
+          <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <!-- Navbar end -->
@@ -73,8 +73,8 @@
             <p>
               <b>
                 “事業の成長余白を発掘し、ビジネスモデルをアップデートする"</b>
-                <br>
-                <br>
+              <br>
+              <br>
               ヒアリング・テスト期間を通じて組織および事業の成長課題を明確化し、課題に対するアプローチ（成長構想）をご提案いたします。今まで立てていたKPIの常識を覆す「圧倒的に売れる状態」へビジネスモデルをアップデートし、営業体制に革命を起こします。
             </p>
           </div>
@@ -84,7 +84,7 @@
         </div>
         <div class="card">
           <div class="content">
-            <b>High Cost Performance		</b>
+            <b>High Cost Performance </b>
             <h3 class="underlined">ハイエンド・ハイコストパフォーマンス</h3>
             <p>
               <b>"事業の成長余白を発掘し、ビジネスモデルをアップデートする"</b>
@@ -103,10 +103,10 @@
             <h3 class="underlined">トップ トゥー ボトム</h3>
             <p>
               <b>"TOP TO BOTTOM。まさに一気通貫。
-                「全員が売れる」を目指し、再現性・内製化を支援"	</b>
-                <br>
-                <br>
-                事業に従事する営業マンの「全員が売れる」状態を創出できるよう、再現性にこだわります。営業のOJTや研修はもちろん、営業に携わるマインドセットや目的・目標設定など、「やるべきこと」の明確化と「できること」の最大化をサポート。属人化せず、仕組みによる成果向上を目指します。
+                「全員が売れる」を目指し、再現性・内製化を支援" </b>
+              <br>
+              <br>
+              事業に従事する営業マンの「全員が売れる」状態を創出できるよう、再現性にこだわります。営業のOJTや研修はもちろん、営業に携わるマインドセットや目的・目標設定など、「やるべきこと」の明確化と「できること」の最大化をサポート。属人化せず、仕組みによる成果向上を目指します。
             </p>
           </div>
           <div class="picture">
@@ -127,6 +127,15 @@
       <div id="service-menu-cards"></div>
     </div>
   </section>
+  <div class="popup-overlay" id="popupOverlay" style="display: none">
+    <div class="popup-content" id="popupContent">
+      <div class="popup-inner">
+        <span class="close-popup" id="closePopup"><img src="../assets/shared/×.png" alt=""></span>
+        <h3 id="popupTitle"></h3>
+        <p id="popupText"></p>
+      </div>
+    </div>
+  </div>
   <!-- Service menu section end -->
 
   <!-- COmmitment section start -->
@@ -199,83 +208,153 @@
 
   <script>
     const cards = document.querySelector("#service-menu-cards");
+    const popupOverlay = document.getElementById("popupOverlay");
+    const popupTitle = document.getElementById("popupTitle");
+    const popupText = document.getElementById("popupText");
+    const closePopup = document.getElementById("closePopup");
 
     const data = [
       {
         id: 1,
         title: "アウトソーシング",
         items: [
-          "テストセールス",
-          "トークスクリプト・マニュアル作成",
-          "アポイント獲得・テレアポ",
-          "インサイドセールス",
-          "フィールドセールス",
-          "採用代行・BPO",
+          {
+            name: "テストセールス",
+            description: "弊社では、お客様とwin-winな関係構築を最優先に考え、初期段階から無理な長期期間契約や、違約金制度を設けるなど、リスクの高いご契約はしておりません。まずは、短期契約にて、テストセールス（テストマーケティング）を実施し、お客様の事業や商品・サービスの拡販・成長における課題抽出を行い、成長ロードマップを作成いたします。",
+          },
+          {
+            name: "トークスクリプト・マニュアル作成",
+            description: "営業活動で使用する資料やトークスクリプトなどの作成を、過去の優良事例やデータを基にした独自のノウハウを用いて行います。また、実際に利用する過程において、常に仮説・検証・改善をし、ブラッシュアップしていきます。",
+          },
+          {
+            name: "アポイント獲得・テレアポ",
+            description: "徹底的な分析・課題抽出を経て熟考されたターゲット選定を経て、必要な営業リストを作成します。「コール数」「アポ数」など各指標のKPIを設定。類似商材の営業経験者をはじめ、お客様の課題解決に合わせて組成した弊社のオリジナルチームが、KPIの達成はもちろん、ハイエンドなパフォーマンスを提供します。",
+          },
+          {
+            name: "インサイドセールス",
+            description: "各手法（主に電話による受電・荷電）によって顧客に営業活動を実施する役割を担います。これまで、1000社以上の支援実績による知識と経験を発揮し、スピード最優先で求める結果に繋げます。KPI達成に向けた戦略を、実行可能な施策に落とし込み、実行・検証・改善を繰り返して新たな勝ちパターンを見出します。そうしてお客さまのインサイドセールスを、成果を生み出し続ける仕組みへと進化させます。",
+          },
+          {
+            name: "フィールドセールス",
+            description: "主に訪問活動（WEB会議あり）によって商品・サービスをご提案し、最終的な受注に繋げる役割を担います。To C向け、To B向けのいずれにおいても、多様なバックグラウンドと豊富な経験を持った弊社の営業マンの中から、貴社に最適なチームをアサインいたします。",
+          },
+          {
+            name: "採用代行・BPO",
+            description: "自社で営業マンおよび社員を採用することによって事業成長を加速させたいというご要望にもお応えしています。候補者の集客から応募対応、説明会・選考の実施まで採用に関する全ての業務に対応可能です。",
+          },
         ],
       },
       {
         id: 2,
         title: "トレーニング",
         items: [
-          "商談/MTG同席・営業OJT",
-          "営業研修の企画~実施",
-          "録音/録画フィードバック・ロープレ",
+          {
+            name: "商談/MTG同席・営業OJT",
+            description: "OJT形式でのトレーニングを提供しています。社員様の営業活動に帯同し、リアルタイムでのフィードバックはもちろん、一定期間の活動分析による課題の可視化や成長ステップをご提示。その後の成長を継続的なOJTを通じて伴走することも可能です。",
+          },
+          {
+            name: "営業研修の企画~実施",
+            description: "新入社員向け～リーダー層向けまで、個別・集団を問わずあらゆる形式に対応可能です。営業に関する大前提の知識はもちろん、営業マンとしての心構えや成果を出すためのマインドセットのチューニングもお任せください。研修前後での行動の変化にご好評いただいています。営業マンとして、自社の商品・サービスを販売することに自信を持った人材を育成いたします。",
+          },
+          {
+            name: "録音/録画フィードバック・ロープレ",
+            description: "抜本的な改革には「営業の見える化」が重要です。不透明な箇所があることは、分析・課題のピンとがズレに繋がります。従って、インサイドセールス・フィールドセールスのいずれにおいても、全てのコミュニケーションを録音・録画し、必要なデータをご提出。また、その中から課題を抽出し、ロールプレイングによって着実に改善を図ります。",
+          },
         ],
       },
       {
         id: 3,
         title: "コンサルティング",
         items: [
-          "再現性・内製化支援",
-          "戦略設計",
-          "分析・課題抽出",
-          "定例ミーティング",
-          "採用コンサルティング",
+          {
+            name: "再現性・内製化支援",
+            description: "弊社では、一時的な支援による属人的な結果を真の結果として捉えておりません。再現性が高く、ご必要に応じて内製化にお応えすることが真の結果であると考えています。弊社が導いた結果へのプロセスを体得していただくためのコンサルティングを実施いたします。",
+          },
+          {
+            name: "戦略設計",
+            description: "戦略設計は、社内の情報だけでなく、マーケットや市場の情報を取り入れることも欠かせません。また、過去のデータや活動履歴をお伺いし、新たな営業戦略を設計いたします。定性的な方針だけでなく、定量的な新しいKPI/KGIを策定。以降はその達成に向け、スピード最重視でご支援いたします。",
+          },
+          {
+            name: "分析・課題抽出",
+            description: "開始時はもちろん、支援開始以降も定期的に営業手法・営業戦略の分析を行い、タイムリーな課題を抽出。常に最善策の追求を徹底することで、継続的な事業成長や成果の向上に繋げます。",
+          },
+          {
+            name: "定例ミーティング",
+            description: "週1回、月1回など、お客様と定めたサイクルでミーティングを実施させていただきます。その期間の活動状況のご報告や課題に関するご説明、またお客様からの新たなオーダーやご相談もお受けし、双方向でのコミュニケーションを重視いたします。そして、ミーティングを通して、以降の営業方針や次回までの取り組みを確定。一蓮托生でプロジェクトを成長・成功に繋げていきましょう。",
+          },
+          {
+            name: "採用コンサルティング",
+            description: "新卒・中途問わず、事業成長に向けて必要な人材の採用を成功させるためのコンサルティングも行っています。ペルソナ設計、募集戦略、選考内容、候補者のフォローなど、採用に関するあらゆるご相談をお受けしています。弊社には採用実務を経験したプロ人材が多数在籍しています。",
+          },
         ],
       },
     ];
 
+
     cards.innerHTML = data.map(
       (item) =>
         `<div class="row">
-            <b class="row-title">${item.title}</b>
-            <div class="cards">
-             ${item.items.map(
-          (text) =>
-            `
-               <div class="card">
-                 <p>${text}</p>
-                 <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   width="8"
-                   height="32"
-                   viewBox="0 0 8 32"
-                   fill="none"
-                 >
-                   <line
-                     y1="-0.8"
-                     x2="16.0523"
-                     y2="-0.8"
-                     transform="matrix(0.354666 -0.934993 0.354666 0.934993 1 32.0039)"
-                     stroke="#DCA840"
-                     stroke-width="1.6"
-                   />
-                   <line
-                     y1="-0.8"
-                     x2="16.0523"
-                     y2="-0.8"
-                     transform="matrix(0.354666 0.934993 -0.354666 0.934993 1.23242 2)"
-                     stroke="#DCA840"
-                     stroke-width="1.6"
-                   />
-                 </svg>
-               </div>`
-        )}
-            </div>
-          </div>`
-    );
+      <b class="row-title">${item.title}</b>
+      <div class="cards">
+        ${item.items
+          .map(
+            (text) =>
+              `
+              <div class="card" onclick="showPopup('${item.title}', '${text.name}', '${text.description}')">
+                <p>${text.name}</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="32"
+                  viewBox="0 0 8 32"
+                  fill="none"
+                >
+                  <line
+                    y1="-0.8"
+                    x2="16.0523"
+                    y2="-0.8"
+                    transform="matrix(0.354666 -0.934993 0.354666 0.934993 1 32.0039)"
+                    stroke="#DCA840"
+                    stroke-width="1.6"
+                  />
+                  <line
+                    y1="-0.8"
+                    x2="16.0523"
+                    y2="-0.8"
+                    transform="matrix(0.354666 0.934993 -0.354666 0.934993 1.23242 2)"
+                    stroke="#DCA840"
+                    stroke-width="1.6"
+                  />
+                </svg>
+              </div>`
+          )
+          .join("")}
+      </div>
+    </div>`
+    ).join("");
 
-    cards.innerHTML = cards.innerHTML.replaceAll(",", "");
+    // Function to show the popup with title and description
+    function showPopup(title, name, description) {
+      popupTitle.textContent = `${title} - ${name}`;
+      popupText.textContent = description;
+      popupOverlay.style.display = "block";
+      document.body.style.overflow = "hidden";
+    }
+
+    // Close popup
+    closePopup.addEventListener("click", () => {
+      popupOverlay.style.display = "none";
+      document.body.style.overflow = "auto";
+    });
+
+    // Close popup when clicking outside
+    window.addEventListener("click", (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+
   </script>
 </body>
 

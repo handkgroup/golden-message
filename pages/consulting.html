@@ -262,25 +262,20 @@
           </p>
         </div>
       </div>
-
-      <!-- Modal -->
-      <div class="modal hide">
-        <div class="modal-container">
-          <div class="modal-content">
-            <button class="cross-btn">×</button>
-            <h2>企業名</h2>
-            <p>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- Modal -->
     </div>
     <div class="school-bottom-text">
       <p>「やり遂げる」。最高の達成感をあなたに。</p>
     </div>
   </section>
+  <div class="popup-overlay" id="popupOverlay" style="display: none">
+    <div class="popup-content" id="popupContent">
+      <div class="popup-inner">
+        <span class="close-popup" id="closePopup"><img src="../assets/shared/×.png" alt=""></span>
+        <h3 id="popupTitle"></h3>
+        <p id="popupText"></p>
+      </div>
+    </div>
+  </div>
   <!-- Case study section end -->
 
   <!-- Contact section start -->
@@ -335,43 +330,69 @@
   <!-- Footer end -->
 
   <script>
-    // get elements from document
-    const btns = document.querySelectorAll(".case-study-btn");
-    const modal = document.querySelector(".modal");
+    // Get the modal and the case study buttons
+    const modal = document.querySelector('.modal');
+    const caseStudyBtns = document.querySelectorAll('.case-study-btn');
+    const crossBtn = document.querySelector('.cross-btn');
 
-    // change status function when element was clicked
-    const changeModalStatus = (type, cls, sty) => {
-      if (type == "remove") {
-        modal.classList.remove("show");
-        modal.classList.add("hide");
-      } else {
-        modal.classList.add("show");
-        modal.classList.remove("hide");
-      }
-      document.body.style.overflow = sty;
-    };
+    // Case study data
+    const caseStudyData = [
+      {
+        name: "24歳　男性　公務員",
+        description: "3ヵ月という短期間でしたが、とても有意義な時間を過ごせました。漠然とある悩みや迷いを言語化していただき、将来のキャリア設計をわかりやすく誘導いただけたおかげで、自信を持って行動を起こせるようになりました。今後は目標の実現に向け、頂戴した数々のアドドバイスを大切に、精進してまいります。"
+      },
+      {
+        name: "27歳　女性　事務職",
+        description: "過去の掘り下げをしていただいた際に、自分がなぜそのような選択と行動をしたのかという理由を知ったことが大きかったです。それによって無意識に自分が大事にしている考え・価値観を知ることができました。今後何かを選択する際の迷いがなくなりました。"
+      },
+      {
+        name: "23歳　男性　営業職",
+        description: "ここまで自分自身に向き合ったことは無かったです。自分は何者なのか、何がしたいのかを徹底的に寄り添って考えてくださりました。身近には相談しづらいこともこの人なら安心できると感じられるコーチに出会えてとても感謝しています。"
+      },
+      {
+        name: "25歳　女性　販売職",
+        description: "セッションを重ねるたびに、次回が待ち遠しい気持ちでした。それだけ毎回気づきに溢れ、充実した時間を過ごせました。それだけでなく、すぐに周りと比べてしまうネガティブな性格が克服できた気がします。フィードバックもわかりやすく、今後も継続してセッションを受けようと思っています。。"
+      },
+      {
+        name: "30歳　男性　技術職",
+        description: "いつもまとまりのない私の発言を汲み取ってわかりやすく整理いただけて、スッキリした気持ちを与えてくれます。決して否定することなく、常に新しい意見をくださるので、頑張ろうという前向きな気持ちになれる時間でした。"
+      },
+    ];
 
-    // listener for click to btn
-    btns.forEach((item) => {
-      return item.addEventListener("click", () =>
-        changeModalStatus("add", "show", "hidden")
-      );
+    caseStudyBtns.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const caseStudy = caseStudyData[index];
+        showModal(caseStudy);
+      });
     });
 
-    const crossIcon = document.querySelector(".cross-btn");
+    function showModal(caseStudy) {
+      const popupOverlay = document.getElementById("popupOverlay");
+      const popupTitle = document.getElementById("popupTitle");
+      const popupText = document.getElementById("popupText");
+      const closePopup = document.getElementById("closePopup");
 
-    // listener for click to cross icon btn
-    crossIcon.addEventListener("click", () =>
-      changeModalStatus("remove", "hide", "auto")
-    );
+      popupTitle.textContent = caseStudy.name;
+      popupText.textContent = caseStudy.description;
 
-    // listener for click to modal
-    modal.addEventListener("click", (e) => {
-      // check event for target and currentTarget
-      if (e.target === e.currentTarget) {
-        changeModalStatus("remove", "hide", "auto");
+      popupOverlay.style.display = "block";
+      document.body.style.overflow = "hidden";
+    }
+
+    // Close popup
+    closePopup.addEventListener("click", () => {
+      popupOverlay.style.display = "none";
+      document.body.style.overflow = "auto";
+    });
+
+    // Close popup when clicking outside
+    window.addEventListener("click", (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.style.display = "none";
+        document.body.style.overflow = "auto";
       }
     });
+
   </script>
   <script src="../js/script.js"></script>
 </body>
