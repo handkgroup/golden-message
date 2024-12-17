@@ -94,7 +94,7 @@ body {
 
 .contact-header {
   margin: 64px 0;
-  height: 55vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -152,6 +152,7 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "box1 box2", "box3 box4";
   margin-bottom: 55px;
+  margin-top: 200px;
 }
 
 .item {

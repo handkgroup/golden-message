@@ -17,6 +17,7 @@
   left: 0;
   pointer-events: none;
   z-index: 0;
+  line-height: 100%;
 }
 
 .hero-bg-text-right {
@@ -42,7 +43,6 @@
 }
 .hero-container > h1 {
   font-size: 108px;
-  letter-spacing: 20px;
   font-weight: bold;
   color: #000;
   line-height: 100%;
@@ -91,14 +91,17 @@
     font-size: 120px;
     top: 25%;
   }
+  .purpose-hero {
+    height: 300px;
+  }
   .purpose-hero .hero-bg-text {
-    font-size: 80px;
+    font-size: 120px;
   }
   .purpose-hero .hero-container h1 {
     font-size: 40px !important;
   }
   .purpose-hero .hero-container {
-    top: 34% !important;
+    top: 18% !important;
   }
 }
 

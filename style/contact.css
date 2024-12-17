@@ -71,7 +71,7 @@ a {
 .main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 32px;
+  padding: 128px 32px;
 }
 
 .top__text {
@@ -80,8 +80,7 @@ a {
 }
 
 .contact-header {
-  margin: 64px 0;
-  height: 55vh;
+  margin: 85px 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -101,6 +100,7 @@ a {
   font-weight: 700;
   line-height: 120%;
   z-index: -1;
+  transform: translateX(-20px);
 }
 
 .contact-title {
@@ -544,6 +544,7 @@ button:hover {
 @media (max-width: 465px) {
   .bg-text {
     font-size: 80px;
+    transform: translateX(-5px);
   }
 
   .contact-title {
@@ -556,7 +557,6 @@ button:hover {
 
   .contact-header {
     margin: 0;
-    height: 45vh;
   }
 
   .top__text {

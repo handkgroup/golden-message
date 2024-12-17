@@ -92,7 +92,7 @@ body {
 }
 
 .contact-header {
-  margin: 64px 0;
+  margin: 20px 0 64px;
   height: 55vh;
   display: flex;
   align-items: center;
@@ -157,7 +157,7 @@ body {
 
 .container {
   padding: 0 100px;
-  margin: 100px 0;
+  margin: 150px 0;
 }
 
 .main__info {
@@ -551,6 +551,10 @@ body {
 
   .content__title {
     font-size: 18px;
+  }
+  .text-position {
+    top: 0 !important;
+    left: 0 !important;
   }
 }
 
