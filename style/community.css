@@ -142,7 +142,7 @@ body {
     font-size: 12px;
   }
   .header-nav_container img {
-    max-width: 220px;
+    width: 280px;
   }
 }
 
@@ -473,6 +473,10 @@ body {
     }
   }
 
+  .header-nav_container img {
+    width: 220px;
+  }
+
   .feature-section {
     .container {
       .cards {
@@ -495,10 +499,6 @@ body {
 
   .header-nav {
     padding: 15px 20px;
-    img {
-      max-width: 250px;
-      width: 100%;
-    }
     button {
       height: 50px;
     }
@@ -571,10 +571,6 @@ body {
   .header-nav_container {
     padding: 0;
     height: 50px;
-
-    img {
-      max-width: 200px !important;
-    }
     button {
       padding: 4px !important;
       height: 35px;
