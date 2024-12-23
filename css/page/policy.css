@@ -184,11 +184,11 @@ body {
 }
 
 .option__left {
-  background-image: url("../img/common/recruit.png");
+  background-image: url("../../img/common/recruit.png");
 }
 
 .option__right {
-  background-image: url("../img/common/contact.png");
+  background-image: url("../../img/common/contact.png");
 }
 
 .option__all {
