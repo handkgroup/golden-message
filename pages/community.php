@@ -13,7 +13,7 @@
 
   <header class="header-nav">
     <div class="header-nav_container">
-      <img src="../img/common/logo.png" alt="logo" />
+      <a href="../index.html"><img src="../img/common/logo.png" alt="logo" /></a>
       <div class="burger-menu" id="burger-menu">
         <span></span>
         <span></span>
@@ -23,7 +23,7 @@
         <ul>
           <li><a class="list__link" href="./service.html">サービス</a></li>
           <li><a class="list__link" href="./about.html">会社概要</a></li>
-          <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+          <li><a class="list__link" href="./purpose.html">ミッション</a></li>
           <li><a class="list__link" href="./news.html">お知らせ</a></li>
           <li><a class="list__link" href="./recruit.html">採用情報</a></li>
           <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
@@ -184,7 +184,7 @@
           </ul>
           <ul>
             <li><a href="./about.html"><a href="./about.html">会社概要</a></a></li>
-            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+            <li><a href="./purpose.html">ミッション・バリュー</a></li>
             <li><a href="./news.html">お知らせ</a></li>
             <li><a href="./recruit.html">採用情報</a></li>
           </ul>

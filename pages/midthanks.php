@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/page/404.css">
-    <title>Page not found</title>
+    <link rel="stylesheet" href="../css/page/midthanks.css">
+    <title>Midthanks</title>
 </head>
 
 <body>
@@ -23,21 +23,19 @@
                 <ul class="nav__list" id="nav-menu">
                     <li><a class="list__link" href="./service.html">サービス</a></li>
                     <li><a class="list__link" href="./about.html">会社概要</a></li>
-                    <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+                    <li><a class="list__link" href="./purpose.html">ミッション</a></li>
                     <li><a class="list__link" href="./news.html">お知らせ</a></li>
                     <li><a class="list__link" href="./recruit.html">採用情報</a></li>
                     <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
                 </ul>
-
             </nav>
         </header>
         <main>
             <div class="header__info">
                 <h1 class="header__title">
-                    Page not found.
+                    お問い合わせありがとうございます。
                 </h1>
-                <p class="header__text">
-                    お探しのページは見つかりませんでした。アクセスしようとしたページは削除されたかURLが変更されているため表示できません。<br>お手数ですが、再度トップページからお探しください。</p>
+                <p class="header__text">3営業日以内に、担当者より折り返しさせていただきます。</p>
                 <a href="../index.html" class="header__btn">トップに戻る</a>
             </div>
         </main>
@@ -61,7 +59,7 @@
                             <a href="./about.html">会社概要</a>
                         </h3>
                         <ul>
-                            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+                            <li><a href="./purpose.html">ミッション・バリュー</a></li>
                             <li><a href="./news.html">お知らせ</a></li>
                             <li><a href="./recruit.html">採用情報</a></li>
                         </ul>
@@ -76,36 +74,13 @@
                 </nav>
             </div>
             <div class="footer-bottom">
-                <a href="./policy.html">プライバシーポリシー</a>
+                <a href="#">プライバシーポリシー</a>
                 <span>© copyright 2024 Golden Messeage</span>
             </div>
         </footer>
+
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const burgerMenu = document.getElementById('burger-menu');
-            const navMenu = document.getElementById('nav-menu');
-            const header = document.querySelector('.header');
-
-            burgerMenu.addEventListener('click', () => {
-                // Toggle active classes
-                burgerMenu.classList.toggle('active');
-                navMenu.classList.toggle('active');
-                header.classList.toggle('menu-active'); // Optional for background change
-            });
-
-            // Optional: Close menu on link click
-            navMenu.addEventListener('click', (event) => {
-                if (event.target.tagName === 'A') {
-                    burgerMenu.classList.remove('active');
-                    navMenu.classList.remove('active');
-                    header.classList.remove('menu-active');
-                }
-            });
-        });
-
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

@@ -89,20 +89,20 @@
   }
 }
 
-.consulting-propose {
+.coaching-propose {
   margin-bottom: 30px;
   .card {
     border-radius: 10px;
   }
   .card:first-of-type {
-    background: url("../../img/consulting/propose_01.png") no-repeat center/cover !important;
+    background: url("../../img/coaching/propose_01.png") no-repeat center/cover !important;
   }
   .card:nth-of-type(2) {
-    background: url("../../img/consulting/propose_02.png") no-repeat center/cover !important;
+    background: url("../../img/coaching/propose_02.png") no-repeat center/cover !important;
     margin-top: 0;
   }
   .card:nth-of-type(3) {
-    background: url("../../img/consulting/propose_03.png") no-repeat center/cover !important;
+    background: url("../../img/coaching/propose_03.png") no-repeat center/cover !important;
     margin-top: 0;
   }
 }
@@ -338,7 +338,7 @@
   }
 }
 
-.consulting-feature {
+.coaching-feature {
   margin-bottom: 30px;
   .card:nth-child(2) {
     margin-top: 0;
@@ -485,7 +485,7 @@
 }
 
 @media (max-width: 1024px) {
-  .consulting-feature {
+  .coaching-feature {
     .cards {
       align-items: center;
       .card {
@@ -503,7 +503,7 @@
 }
 
 @media (max-width: 767px) {
-  .consulting-propose {
+  .coaching-propose {
     .cards {
       flex-direction: column;
       align-items: center;

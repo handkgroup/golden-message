@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Golden Messaging | Consulting</title>
+  <title>Golden Messaging | coaching</title>
   <link rel="stylesheet" href="../css/page/community.css" />
   <link rel="stylesheet" href="../css/page/school.css" />
 </head>
@@ -23,7 +23,7 @@
         <ul>
           <li><a class="list__link" href="./service.html">サービス</a></li>
           <li><a class="list__link" href="./about.html">会社概要</a></li>
-          <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+          <li><a class="list__link" href="./purpose.html">ミッション</a></li>
           <li><a class="list__link" href="./news.html">お知らせ</a></li>
           <li><a class="list__link" href="./recruit.html">採用情報</a></li>
           <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
@@ -156,7 +156,7 @@
 
             <ul>
               <li><a href="./about.html"><a href="./about.html">会社概要</a></a></li>
-              <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+              <li><a href="./purpose.html">ミッション・バリュー</a></li>
               <li><a href="./news.html">お知らせ</a></li>
               <li><a href="./recruit.html">採用情報</a></li>
             </ul>

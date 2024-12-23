@@ -34,7 +34,7 @@
             <nav class="nav" id="nav-menu">
                 <a href="./pages/service.html">サービス</a>
                 <a href="./pages/about.html">About us</a>
-                <a href="./pages/gm-purpose.html">ミッション・バリュー</a>
+                <a href="./pages/purpose.html">ミッション・バリュー</a>
                 <a href="./pages/news.html">お知らせ</a>
                 <a href="./pages/recruit.html">採用情報</a>
                 <a href="./pages/contact.html" class="btn-contact">お問い合わせ</a>
@@ -112,7 +112,7 @@
                         <h3>スクール事業</h3>
                     </div>
                 </a>
-                <a href="./pages/consulting.html" class="service-card">
+                <a href="./pages/coaching.html" class="service-card">
                     <div class="service-card-bg"></div>
                     <div class="service-card-content">
                         <p>キャッチコピーが入りますテキストテキスト</p>
@@ -184,7 +184,7 @@
                         <a href="./about.html">会社概要</a>
                     </h3>
                     <ul>
-                        <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+                        <li><a href="./purpose.html">ミッション・バリュー</a></li>
                         <li><a href="./news.html">お知らせ</a></li>
                         <li><a href="./recruit.html">採用情報</a></li>
                     </ul>

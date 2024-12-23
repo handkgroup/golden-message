@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Golden Messaging | Consulting</title>
-  <link rel="stylesheet" href="../css/page/consulting.css" />
+  <title>Golden Messaging | coaching</title>
+  <link rel="stylesheet" href="../css/page/coaching.css" />
   <link rel="stylesheet" href="../css/page/community.css">
 </head>
 
@@ -13,7 +13,7 @@
   <!-- Navbar start -->
   <header class="header-nav">
     <div class="header-nav_container">
-      <img src="../img/common/logo.png" alt="logo" />
+      <a href="../index.html"><img src="../img/common/logo.png" alt="logo" /></a>
       <div class="burger-menu" id="burger-menu">
         <span></span>
         <span></span>
@@ -23,7 +23,7 @@
         <ul>
           <li><a class="list__link" href="./service.html">サービス</a></li>
           <li><a class="list__link" href="./about.html">会社概要</a></li>
-          <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+          <li><a class="list__link" href="./purpose.html">ミッション</a></li>
           <li><a class="list__link" href="./news.html">お知らせ</a></li>
           <li><a class="list__link" href="./recruit.html">採用情報</a></li>
           <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
@@ -45,7 +45,7 @@
   <!-- Header end -->
 
   <!-- Service section start -->
-  <section class="service-section consulting-service">
+  <section class="service-section coaching-service">
     <div class="container">
       <b class="section-title">SERVICE</b>
       <h2 class="underlined">
@@ -61,7 +61,7 @@
   <!-- Service section end -->
 
   <!-- Propose section start -->
-  <section class="propose-section consulting-propose">
+  <section class="propose-section coaching-propose">
     <div class="container">
       <b class="section-title">PROPOSE</b>
       <h2>こんな方に、キャリアコーチングはオススメです</h2>
@@ -149,7 +149,7 @@
   <!-- Link button end -->
 
   <!-- Feature section start -->
-  <section class="feature-section consulting-feature">
+  <section class="feature-section coaching-feature">
     <div class="container">
       <b class="section-title">FEATURE</b>
       <h2>弊社のキャリアコーチングの特徴</h2>
@@ -164,7 +164,7 @@
             </p>
           </div>
           <div class="picture">
-            <img src="../img/consulting/feature_01.png" alt="photo" />
+            <img src="../img/coaching/feature_01.png" alt="photo" />
           </div>
         </div>
         <div class="card">
@@ -176,7 +176,7 @@
             </p>
           </div>
           <div class="picture">
-            <img src="../img/consulting/feature_02.png" alt="photo" />
+            <img src="../img/coaching/feature_02.png" alt="photo" />
           </div>
         </div>
         <div class="card">
@@ -188,7 +188,7 @@
             </p>
           </div>
           <div class="picture">
-            <img src="../img/consulting/feature_03.png" alt="photo" />
+            <img src="../img/coaching/feature_03.png" alt="photo" />
           </div>
         </div>
       </div>
@@ -213,7 +213,7 @@
       <div class="cards card__carousel">
         <div class="card">
           <div class="picture">
-            <img src="../img/consulting/case_01.png" alt="photo" />
+            <img src="../img/coaching/case_01.png" alt="photo" />
             <button class="case-study-btn">more</button>
           </div>
           <h3>24歳　男性　公務員</h3>
@@ -223,7 +223,7 @@
         </div>
         <div class="card">
           <div class="picture">
-            <img src="../img/consulting/case_02.png" alt="photo" />
+            <img src="../img/coaching/case_02.png" alt="photo" />
             <button class="case-study-btn">more</button>
           </div>
           <h3>27歳　女性　事務職</h3>
@@ -233,7 +233,7 @@
         </div>
         <div class="card">
           <div class="picture">
-            <img src="../img/consulting/case_03.png" alt="photo" />
+            <img src="../img/coaching/case_03.png" alt="photo" />
             <button class="case-study-btn">more</button>
           </div>
           <h3>23歳　男性　営業職</h3>
@@ -243,7 +243,7 @@
         </div>
         <div class="card">
           <div class="picture">
-            <img src="../img/consulting/case_04.png" alt="photo" />
+            <img src="../img/coaching/case_04.png" alt="photo" />
             <button class="case-study-btn">more</button>
           </div>
           <h3>25歳　女性　販売職</h3>
@@ -253,7 +253,7 @@
         </div>
         <div class="card">
           <div class="picture">
-            <img src="../img/consulting/case_05.png" alt="photo" />
+            <img src="../img/coaching/case_05.png" alt="photo" />
             <button class="case-study-btn">more</button>
           </div>
           <h3>30歳　男性　技術職</h3>
@@ -310,7 +310,7 @@
 
           <ul>
             <li><a href="./about.html"><a href="./about.html">会社概要</a></a></li>
-            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+            <li><a href="./purpose.html">ミッション・バリュー</a></li>
             <li><a href="./news.html">お知らせ</a></li>
             <li><a href="./recruit.html">採用情報</a></li>
           </ul>

@@ -24,7 +24,7 @@
       <nav class="nav" id="nav-menu">
         <a href="./service.html">サービス</a>
         <a href="./about.html">会社概要</a>
-        <a href="./gm-purpose.html">ミッション</a>
+        <a href="./purpose.html">ミッション</a>
         <a href="./news.html">お知らせ</a>
         <a href="./recruit.html">採用情報</a>
         <a href="./contact.html" class="btn-contact">お問い合わせ</a>
@@ -112,7 +112,7 @@
             <a href="./about.html">会社概要</a>
           </h3>
           <ul>
-            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+            <li><a href="./purpose.html">ミッション・バリュー</a></li>
             <li><a href="./news.html">お知らせ</a></li>
             <li><a href="./recruit.html">採用情報</a></li>
           </ul>

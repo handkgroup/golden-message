@@ -27,7 +27,7 @@
       <nav class="nav" id="nav-menu">
         <a href="./service.html">サービス</a>
         <a href="./about.html">会社概要</a>
-        <a href="./gm-purpose.html">ミッション・バリュー</a>
+        <a href="./purpose.html">ミッション・バリュー</a>
         <a href="./news.html">お知らせ</a>
         <a href="./recruit.html">採用情報</a>
         <a href="./contact.html" class="btn-contact">お問い合わせ</a>
@@ -92,7 +92,7 @@
   <section class="animate-numbers">
     <div class="mt-5 mb-3">
       <div class="grey-text-container">
-        <span class="recruit-grey-text" style="right: 0 !important; left: unset;">recruit</span>
+        <span class="recruit-grey-text" style="right: 0 !important; left: unset;">BUSINESS</span>
         <h2 class="golden-title text-center">事業分野</h2>
         <h2 style="
         font-family:
@@ -101,7 +101,7 @@
         color: black;
         font-size: 40px;
       " class="text-center mb-3">
-          OUR recruit FIELD
+          OUR BUSINESS FIELD
         </h2>
       </div>
       <img src="../img/recruit/diagram2.png" width="80%" alt="" />
@@ -309,7 +309,7 @@
             <a href="./about.html">会社概要</a>
           </h3>
           <ul>
-            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+            <li><a href="./purpose.html">ミッション・バリュー</a></li>
             <li><a href="./news.html">お知らせ</a></li>
             <li><a href="./recruit.html">採用情報</a></li>
           </ul>

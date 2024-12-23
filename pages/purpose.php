@@ -24,7 +24,7 @@
       <nav class="nav" id="nav-menu">
         <a href="./service.html">サービス</a>
         <a href="./about.html">会社概要</a>
-        <a href="./gm-purpose.html">ミッション・バリュー</a>
+        <a href="./purpose.html">ミッション・バリュー</a>
         <a href="./news.html">お知らせ</a>
         <a href="./recruit.html">採用情報</a>
         <a href="./contact.html" class="btn-contact">お問い合わせ</a>
@@ -34,7 +34,7 @@
   <br />
   <br />
   <div class="flex text-black text-margin left-text top-text" style="padding: 65px 0 0 10%;">
-    <a href="../index.html"> TOP　</a> > <a href="./gm-purpose.html">　ミッション・ビジョン・バリュー </a>
+    <a href="../index.html"> TOP　</a> > <a href="./purpose.html">　ミッション・ビジョン・バリュー </a>
   </div>
   <section class="hero purpose-hero">
     <span class="hero-bg-text" style="top: -7%; left: -15px;">GM <br> PURPOSE</span>
@@ -44,7 +44,7 @@
     </div>
   </section>
 
-  <div class="gm-purpose-page" style="padding: 5%;">
+  <div class="purpose-page" style="padding: 5%;">
     <section class="mission-animate">
       <p class="text-center font-light text-sm mt-5 text-black">Mission</p>
       <h2 class="title text-center title-underline-orange text-black">存在意義・使命</h2>
@@ -121,7 +121,7 @@
           <p class="font-light text-black">迷ったら、困ったら、助け合おう。</p>
         </div>
         <div class="flex-2 justify-center items-center">
-          <img src="../img/gm-purpose/chart.png" width="100%" alt="" />
+          <img src="../img/purpose/chart.png" width="100%" alt="" />
         </div>
       </div>
   </div>

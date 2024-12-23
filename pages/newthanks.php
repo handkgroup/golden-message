@@ -23,7 +23,7 @@
                 <ul class="nav__list" id="nav-menu">
                     <li><a class="list__link" href="./service.html">サービス</a></li>
                     <li><a class="list__link" href="./about.html">会社概要</a></li>
-                    <li><a class="list__link" href="./gm-purpose.html">ミッション</a></li>
+                    <li><a class="list__link" href="./purpose.html">ミッション</a></li>
                     <li><a class="list__link" href="./news.html">お知らせ</a></li>
                     <li><a class="list__link" href="./recruit.html">採用情報</a></li>
                     <li><a class="list__link contact-btn" href="./contact.html">お問い合わせ</a></li>
@@ -59,7 +59,7 @@
                             <a href="./about.html">会社概要</a>
                         </h3>
                         <ul>
-                            <li><a href="./gm-purpose.html">ミッション・バリュー</a></li>
+                            <li><a href="./purpose.html">ミッション・バリュー</a></li>
                             <li><a href="./news.html">お知らせ</a></li>
                             <li><a href="./recruit.html">採用情報</a></li>
                         </ul>
