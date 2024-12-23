@@ -36,14 +36,14 @@
     border-radius: 10px;
   }
   .card:first-of-type {
-    background: url("../assets/school/service_01.png") no-repeat center/cover !important;
+    background: url("../img/school/service_01.png") no-repeat center/cover !important;
   }
   .card:nth-of-type(2) {
-    background: url("../assets/school/service_02.png") no-repeat center/cover !important;
+    background: url("../img/school/service_02.png") no-repeat center/cover !important;
     margin-top: 0;
   }
   .card:nth-of-type(3) {
-    background: url("../assets/school/service_03.png") no-repeat center/cover !important;
+    background: url("../img/school/service_03.png") no-repeat center/cover !important;
     margin-top: 0;
   }
 }
@@ -71,7 +71,7 @@
       }
     }
   }
-  .school-bottom-text p{
+  .school-bottom-text p {
     font-size: 24px !important;
   }
 }

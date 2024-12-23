@@ -32,50 +32,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Sections to animate
   const sectionsToAnimate = [
-    '.main-fv',
-    '.news',
-    '.about-section',
-    '.service-section',
-    '.special-section',
-    '.message',
-    '.company-info',
-    '.animate-about',
-    '.animate-numbers',
-    '.animate-requirements',
-    '.animate-message',
-    '.service',
-    '.feature',
-    '.feature-section',
-    '.mission-section',
-    '.service-section',
-    '.propose-section',
-    '.flow-section',
-    '.case-study-section',
-    '.mission-animate',
-    '.vision-animate',
-    '.purpose-value',
-    '.tab-container',
-    '.service-menu-section',
-    '.commitment-section',
-    '.mission-section',
-    '.main__grid'
+    ".main-fv",
+    ".news",
+    ".about-section",
+    ".service-section",
+    ".special-section",
+    ".message",
+    ".company-info",
+    ".animate-about",
+    ".animate-numbers",
+    ".animate-requirements",
+    ".animate-message",
+    ".service",
+    ".feature",
+    ".feature-section",
+    ".mission-section",
+    ".service-section",
+    ".propose-section",
+    ".flow-section",
+    ".case-study-section",
+    ".mission-animate",
+    ".vision-animate",
+    ".purpose-value",
+    ".tab-container",
+    ".service-menu-section",
+    ".commitment-section",
+    ".mission-section",
+    ".main__grid",
   ];
 
   // Observe each section
-  sectionsToAnimate.forEach(selector => {
+  sectionsToAnimate.forEach((selector) => {
     const section = document.querySelector(selector);
     if (section) {
       // Set initial styles
-      section.style.opacity = '0';
-      section.style.transform = 'translateY(50px)';
-      section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+      section.style.opacity = "0";
+      section.style.transform = "translateY(50px)";
+      section.style.transition =
+        "opacity 0.6s ease-out, transform 0.6s ease-out";
       observer.observe(section);
     }
   });
 
-  // Keep existing observers for news components
-  document.querySelectorAll(".news-title").forEach((el) => observer.observe(el));
-  document.querySelectorAll(".news-content").forEach((el) => observer.observe(el));
+  // Keep existing observers for news common
+  document
+    .querySelectorAll(".news-title")
+    .forEach((el) => observer.observe(el));
+  document
+    .querySelectorAll(".news-content")
+    .forEach((el) => observer.observe(el));
   document.querySelectorAll(".dark-btn").forEach((el) => observer.observe(el));
 });
 
@@ -83,18 +88,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const typingElements = document.querySelectorAll(".typing");
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const loaderText = document.querySelector(".loader p");
-  
+
   // Hide text initially
   loaderText.style.opacity = "0";
-  
+
   setTimeout(() => {
     loaderText.style.opacity = "1";
     loaderText.style.animation = "textColor 0.5s forwards";
-    
+
     typingElements.forEach((element) => {
       const finalText = element.textContent.trim();
       element.textContent = "";
-      
+
       const textArray = [...finalText];
       const spans = textArray.map((char) => {
         const span = document.createElement("span");
@@ -108,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
         element.appendChild(span);
         return span;
       });
-      
+
       const glitchInterval = setInterval(() => {
         spans.forEach((span) => {
           if (!span.isLocked) {
@@ -117,19 +122,19 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       }, 20);
-      
+
       spans.forEach((span, i) => {
         if (!span.isLocked) {
           setTimeout(() => {
             span.isLocked = true;
             span.textContent = textArray[i];
-          }, 150 + (i * 20));
+          }, 150 + i * 20);
         }
       });
-      
+
       setTimeout(() => {
         clearInterval(glitchInterval);
-      }, 150 + (finalText.length * 20));
+      }, 150 + finalText.length * 20);
 
       // Text slides out with black background
       setTimeout(() => {
@@ -140,14 +145,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Select burger menu, navigation, and header
-const burgerMenu = document.getElementById('burger-menu');
-const navMenu = document.getElementById('nav-menu');
-const header = document.querySelector('header');
+const burgerMenu = document.getElementById("burger-menu");
+const navMenu = document.getElementById("nav-menu");
+const header = document.querySelector("header");
 
 // Toggle classes to show/hide the menu
-burgerMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    burgerMenu.classList.toggle('active');
-    header.classList.toggle('active'); // Add or remove 'active' class on the header
+burgerMenu.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  burgerMenu.classList.toggle("active");
+  header.classList.toggle("active"); // Add or remove 'active' class on the header
 });
-

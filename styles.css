@@ -1,15 +1,15 @@
-@import "components/responsive-container.css";
-@import "components/navbar.css";
-@import "components/hero-title.css";
-@import "components/buttons.css";
-@import "utility/utilities.css";
-@import "components/cta.css";
-@import "pages/news.css";
-@import "pages/about.css";
-@import "components/footer.css";
-@import "components/title.css";
-@import "utility/responsive.css";
-@import "pages/business.css";
+@import "common/responsive-container.css";
+@import "common/navbar.css";
+@import "common/hero-title.css";
+@import "common/buttons.css";
+@import "common/utilities.css";
+@import "common/cta.css";
+@import "page/news.css";
+@import "page/about.css";
+@import "common/footer.css";
+@import "common/title.css";
+@import "common/responsive.css";
+@import "page/recruit.css";
 
 /* styles.css */
 :root {

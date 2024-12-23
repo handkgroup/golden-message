@@ -30,7 +30,7 @@ main {
 
 .header__info {
   height: 50vh;
-  background-image: url("../assets/img/about_bg.png");
+  background-image: url("../img/common/about_bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

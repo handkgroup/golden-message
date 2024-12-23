@@ -1,5 +1,5 @@
 .message {
-  background-image: url("../../assets/about-us/about_director.png");
+  background-image: url("../../img/about-us/about_director.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -82,16 +82,16 @@
 .company-info-item-body {
   flex: 3;
   padding: 16px;
-  border-bottom: 1px solid #BEBEBE;
+  border-bottom: 1px solid #bebebe;
   color: #333;
 }
 
 .company-info-item-body ul li {
-    padding-bottom: 28.8px;
+  padding-bottom: 28.8px;
 }
 
 .company-info-item-body ul li:last-of-type {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .table {

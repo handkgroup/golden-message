@@ -12,11 +12,11 @@
   padding-bottom: 21px;
 }
 
-.business-heading {
+.recruit-heading {
   font-size: 24px;
   color: black !important;
 }
-.business-heading:after {
+.recruit-heading:after {
   content: "";
   display: block;
   height: 5px;
@@ -65,7 +65,8 @@
 
 .news-details-content {
   padding: 0 4.5%;
-  h3, p {
+  h3,
+  p {
     color: #000;
   }
   .btn-news {

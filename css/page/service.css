@@ -241,7 +241,7 @@ body {
 }
 
 .contact__info {
-  background-image: url("../assets/img/contact_bg.png");
+  background-image: url("../img/common/contact_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

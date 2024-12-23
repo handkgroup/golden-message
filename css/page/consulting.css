@@ -38,7 +38,7 @@
       max-width: 1200px;
       .card {
         max-width: 313px;
-        background-image: url("../assets/img/propose-card.jpg");
+        background-image: url("../img/common/propose-card.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -95,17 +95,14 @@
     border-radius: 10px;
   }
   .card:first-of-type {
-    background: url("../assets/consulting/propose_01.png") no-repeat
-      center/cover !important;
+    background: url("../img/consulting/propose_01.png") no-repeat center/cover !important;
   }
   .card:nth-of-type(2) {
-    background: url("../assets/consulting/propose_02.png") no-repeat
-      center/cover !important;
+    background: url("../img/consulting/propose_02.png") no-repeat center/cover !important;
     margin-top: 0;
   }
   .card:nth-of-type(3) {
-    background: url("../assets/consulting/propose_03.png") no-repeat
-      center/cover !important;
+    background: url("../img/consulting/propose_03.png") no-repeat center/cover !important;
     margin-top: 0;
   }
 }
@@ -128,7 +125,7 @@
 
   .steps {
     .step {
-      background-image: url("../assets/img/dk-bg.png");
+      background-image: url("../img/common/dk-bg.png");
       background-repeat: no-repeat;
       position: relative;
       z-index: 10;
@@ -181,7 +178,7 @@
 
     .step:first-child,
     .step:last-child {
-      background-image: url("../assets/img/wh-bg.png");
+      background-image: url("../img/common/wh-bg.png");
     }
 
     .step:first-child {
@@ -440,7 +437,7 @@
 
 .popup-inner {
   padding: 119px 100px 78px;
-  border: 1px solid var(--Gold, #DCA840);
+  border: 1px solid var(--Gold, #dca840);
   border-radius: 20px;
 }
 
@@ -471,7 +468,6 @@
 .close-popup:hover {
   color: #000;
 }
-
 
 .card__carousel {
   display: flex !important;

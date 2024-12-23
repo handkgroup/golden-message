@@ -227,7 +227,7 @@ body {
 
 /* header style start */
 .header {
-  background-image: url("../assets/img/header-bg.png");
+  background-image: url("../img/common/header-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -260,7 +260,7 @@ body {
 
 /* contact section style start */
 .contact-section {
-  background-image: url("../assets/img/contact-bg.jpg");
+  background-image: url("../img/common/contact-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
